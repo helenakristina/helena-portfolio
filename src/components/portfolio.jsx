@@ -23,7 +23,7 @@ export default function PortfolioSite() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white overflow-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-orange-500 to-teal-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-gray-500 to-teal-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
         <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-pink-500 to-orange-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
@@ -32,7 +32,7 @@ export default function PortfolioSite() {
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/50 border-b border-teal-500/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-gray-300 via-gray-400 to-teal-400 bg-clip-text text-transparent">
               Helena
             </div>
             
@@ -43,8 +43,8 @@ export default function PortfolioSite() {
                   key={item}
                   onClick={() => scrollToSection(item)}
                   className={`capitalize font-medium transition-all duration-300 ${
-                    activeSection === item 
-                      ? 'text-transparent bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text' 
+                    activeSection === item
+                      ? 'text-transparent bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text'
                       : 'text-gray-300 hover:text-white'
                   }`}
                 >
@@ -84,7 +84,7 @@ export default function PortfolioSite() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6 animate-fade-in">
             <h1 className="text-5xl sm:text-7xl font-bold leading-tight">
-              <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-300 via-gray-400 to-teal-400 bg-clip-text text-transparent">
                 Building Better
               </span>
               <br />
@@ -98,7 +98,7 @@ export default function PortfolioSite() {
             <div className="flex flex-wrap gap-4 justify-center pt-4">
               <button
                 onClick={() => scrollToSection('meno')}
-                className="px-8 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-pink-500 font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 font-semibold hover:shadow-lg hover:shadow-gray-500/50 transition-all duration-300 transform hover:scale-105"
               >
                 See My Work
               </button>
@@ -111,7 +111,7 @@ export default function PortfolioSite() {
             </div>
 
             <div className="pt-12 flex justify-center">
-              <ChevronDown size={32} className="animate-bounce text-orange-400" />
+              <ChevronDown size={32} className="animate-bounce text-gray-400" />
             </div>
           </div>
         </div>
@@ -121,12 +121,12 @@ export default function PortfolioSite() {
       <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">The Journey</span>
+            <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">The Journey</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-teal-500/10 to-pink-500/10 border border-teal-400/30 rounded-lg p-6 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-300">
-              <h3 className="text-xl font-bold mb-3 text-orange-400">Before</h3>
+            <div className="bg-gradient-to-br from-teal-500/10 to-gray-500/10 border border-teal-400/30 rounded-lg p-6 backdrop-blur-sm hover:border-gray-400/50 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-3 text-gray-400">Before</h3>
               <p className="text-gray-300 leading-relaxed">
                 Senior software engineer at companies like Flashpoint and Cox Automotive, building data solutions and leading technical teams. BS in Computer Science, Grace Hopper Scholar, experienced across the full stack—Python, cloud infrastructure, distributed systems.
               </p>
@@ -140,9 +140,9 @@ export default function PortfolioSite() {
             </div>
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-orange-500/5 to-teal-500/5 border border-orange-400/30 rounded-lg p-8">
+          <div className="mt-12 bg-gradient-to-r from-gray-500/5 to-teal-500/5 border border-gray-400/30 rounded-lg p-8">
             <p className="text-lg text-gray-200 leading-relaxed">
-              <span className="font-bold text-orange-400">Why this matters:</span> Mental health challenges taught me what sustainable work actually means. I care about building in environments where people can do their best work without burning out. I value ethics deeply—especially in AI, healthcare, and data. That's reflected in everything I build.
+              <span className="font-bold text-gray-400">Why this matters:</span> Mental health challenges taught me what sustainable work actually means. I care about building in environments where people can do their best work without burning out. I value ethics deeply—especially in AI, healthcare, and data. That's reflected in everything I build.
             </p>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function PortfolioSite() {
       <section id="meno" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">Meno</span>
+            <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">Meno</span>
             <span className="text-2xl text-gray-400 block mt-2">A passion project solving a real problem</span>
           </h2>
 
@@ -162,13 +162,13 @@ export default function PortfolioSite() {
               <p className="text-gray-300">Women navigating menopause are frequently dismissed by healthcare providers. Meno bridges that gap with education and tracking.</p>
             </div>
 
-            <div className="bg-gradient-to-br from-teal-500/10 to-pink-500/10 border border-teal-400/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-pink-400 mb-2">The Solution</h3>
+            <div className="bg-gradient-to-br from-teal-500/10 to-gray-500/10 border border-teal-400/30 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-400 mb-2">The Solution</h3>
               <p className="text-gray-300">Full-stack web app with symptom tracking, evidence-based AI chat (Claude API), and provider directory.</p>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 border border-orange-400/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-orange-400 mb-2">The Impact</h3>
+            <div className="bg-gradient-to-br from-gray-500/10 to-gray-400/10 border border-gray-400/30 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-400 mb-2">The Impact</h3>
               <p className="text-gray-300">Help women arrive at appointments prepared, informed, and empowered to advocate for themselves.</p>
             </div>
           </div>
@@ -177,11 +177,11 @@ export default function PortfolioSite() {
             <h3 className="text-xl font-bold mb-4 text-teal-300">Tech Stack</h3>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div>
-                <p className="text-orange-400 font-semibold mb-2">Frontend</p>
+                <p className="text-gray-400 font-semibold mb-2">Frontend</p>
                 <p className="text-gray-300">SvelteKit + TypeScript, shadcn-svelte, Vercel hosting</p>
               </div>
               <div>
-                <p className="text-pink-400 font-semibold mb-2">Backend</p>
+                <p className="text-gray-400 font-semibold mb-2">Backend</p>
                 <p className="text-gray-300">FastAPI (Python), Railway hosting</p>
               </div>
               <div>
@@ -189,14 +189,14 @@ export default function PortfolioSite() {
                 <p className="text-gray-300">Supabase (PostgreSQL + pgvector + Auth)</p>
               </div>
               <div>
-                <p className="text-blue-400 font-semibold mb-2">AI</p>
+                <p className="text-gray-400 font-semibold mb-2">AI</p>
                 <p className="text-gray-300">Claude API (production), OpenAI (dev), RAG pipeline</p>
               </div>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-teal-300">Main Demo Video</h3>
+            <h3 className="text-xl font-bold text-gray-400">Main Demo Video</h3>
             <div className="bg-gradient-to-br from-slate-800 to-slate-700 border-2 border-orange-400/30 rounded-lg aspect-video flex items-center justify-center">
               <div className="text-center">
                 <p className="text-gray-400 mb-2">Demo video coming soon</p>
@@ -211,7 +211,7 @@ export default function PortfolioSite() {
               <p className="text-gray-400 text-sm">Onboarding & symptom logging</p>
             </div>
             <div className="bg-slate-800/30 border border-teal-400/20 rounded-lg p-4">
-              <h4 className="font-semibold text-pink-300 mb-1">Feature Reel 2</h4>
+              <h4 className="font-semibold text-gray-300 mb-1">Feature Reel 2</h4>
               <p className="text-gray-400 text-sm">Ask Meno AI chat</p>
             </div>
             <div className="bg-slate-800/30 border border-teal-400/20 rounded-lg p-4">
@@ -235,13 +235,13 @@ export default function PortfolioSite() {
               <p className="text-gray-300 text-sm">Deep dive into LLM architectures, prompt engineering, and application design</p>
             </div>
 
-            <div className="bg-gradient-to-r from-teal-500/10 to-pink-500/10 border border-teal-400/30 rounded-lg p-6 hover:border-pink-400/50 transition-all">
-              <h3 className="font-bold text-lg text-pink-300 mb-2">Building AI Systems (Coursera, 2025)</h3>
+            <div className="bg-gradient-to-r from-teal-500/10 to-gray-500/10 border border-teal-400/30 rounded-lg p-6 hover:border-gray-400/50 transition-all">
+              <h3 className="font-bold text-lg text-gray-300 mb-2">Building AI Systems (Coursera, 2025)</h3>
               <p className="text-gray-300 text-sm">RAG pipelines, vector embeddings, retrieval strategies, evaluation frameworks</p>
             </div>
 
-            <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 border border-orange-400/30 rounded-lg p-6 hover:border-yellow-400/50 transition-all">
-              <h3 className="font-bold text-lg text-orange-300 mb-2">Applied ML & LLM Projects</h3>
+            <div className="bg-gradient-to-r from-gray-500/10 to-gray-400/10 border border-gray-400/30 rounded-lg p-6 hover:border-gray-400/50 transition-all">
+              <h3 className="font-bold text-lg text-gray-300 mb-2">Applied ML & LLM Projects</h3>
               <p className="text-gray-300 text-sm">Built Meno using cutting-edge LLM integration, vector search, and ethical AI principles</p>
             </div>
           </div>
@@ -252,15 +252,15 @@ export default function PortfolioSite() {
       <section id="work" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">Selected Work</span>
+            <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">Selected Work</span>
           </h2>
 
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-teal-500/5 to-pink-500/5 border border-teal-400/30 rounded-lg p-8 hover:border-pink-400/50 transition-all">
+            <div className="bg-gradient-to-br from-teal-500/5 to-gray-500/5 border border-teal-400/30 rounded-lg p-8 hover:border-gray-400/50 transition-all">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white">Flashpoint | Senior Engineer & Tech Lead</h3>
-                  <p className="text-orange-400 font-semibold">Nov 2019 – Oct 2021</p>
+                  <p className="text-gray-400 font-semibold">Nov 2019 – Oct 2021</p>
                 </div>
               </div>
               <p className="text-gray-300 mb-4">Led mission-critical infrastructure for enterprise security. Owned the Compromised Credentials Monitoring system (alerts to 35B+ breach records). Led data warehouse cleansing initiative across 40TB of data.</p>
@@ -277,7 +277,7 @@ export default function PortfolioSite() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white">Cox Automotive | Senior Engineer – Data Solutions</h3>
-                  <p className="text-teal-400 font-semibold">May 2017 – May 2019</p>
+                  <p className="text-gray-400 font-semibold">May 2017 – May 2019</p>
                 </div>
               </div>
               <p className="text-gray-300 mb-4">Built integrative data solutions across 6+ subsidiaries (Kelly Blue Book, Manheim, AutoTrader). Enabled Maryland MVA to reduce safety recall rates by uniting fragmented data sources. Designed neural networks for vehicle valuations achieving superior accuracy.</p>
@@ -290,11 +290,11 @@ export default function PortfolioSite() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-500/5 to-yellow-500/5 border border-orange-400/30 rounded-lg p-8 hover:border-yellow-400/50 transition-all">
+            <div className="bg-gradient-to-br from-gray-500/5 to-gray-400/5 border border-gray-400/30 rounded-lg p-8 hover:border-gray-400/50 transition-all">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white">Intel | Software Engineer – Data & Analytics</h3>
-                  <p className="text-orange-400 font-semibold">2012 – 2016</p>
+                  <p className="text-gray-400 font-semibold">2012 – 2016</p>
                 </div>
               </div>
               <p className="text-gray-300 mb-4">Started as intern, grew into data specialist. Mapped Intel's entire ecosystem using graph databases for emergency planning. Worked across Hadoop, Elasticsearch, Neo4J, gaining breadth in data infrastructure.</p>
@@ -313,7 +313,7 @@ export default function PortfolioSite() {
       <section id="resume" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text text-transparent">Resume</span>
+            <span className="bg-gradient-to-r from-teal-400 to-gray-400 bg-clip-text text-transparent">Resume</span>
           </h2>
 
           <div className="bg-gradient-to-br from-slate-800/30 to-teal-900/30 border border-teal-400/30 rounded-lg p-8">
@@ -328,21 +328,21 @@ export default function PortfolioSite() {
             </div>
 
             <div className="border-t border-teal-400/30 pt-6">
-              <h4 className="text-lg font-bold text-orange-400 mb-3">Core Skills</h4>
+              <h4 className="text-lg font-bold text-gray-400 mb-3">Core Skills</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Python 3.9+ • Data Analysis & ML (Pandas, NumPy, TensorFlow, Keras) • LLM Systems (Claude API, RAG, vector embeddings) • Data Visualization (Plotly, Matplotlib, Bokeh) • Backend APIs (FastAPI, Flask) • Cloud Platforms (AWS, GCP, Supabase) • Infrastructure (Docker, Kubernetes, Terraform) • Databases (PostgreSQL, Elasticsearch, Neo4J) • Full-Stack Development (SvelteKit, React) • Leadership & Mentorship
               </p>
             </div>
 
             <div className="mt-6 border-t border-teal-400/30 pt-6">
-              <h4 className="text-lg font-bold text-teal-400 mb-3">Education</h4>
+              <h4 className="text-lg font-bold text-gray-400 mb-3">Education</h4>
               <p className="text-gray-300 font-semibold">BS Computer Science, Washington State University (2014)</p>
               <p className="text-gray-400 text-sm">Chancellor's Award | Grace Hopper Scholar | Cum Laude</p>
             </div>
 
             <div className="mt-8 text-center">
               <p className="text-gray-400 text-sm mb-4">View detailed resume as PDF or scroll up for full career timeline</p>
-              <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-pink-500 font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all inline-flex items-center gap-2">
+              <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 font-semibold hover:shadow-lg hover:shadow-gray-500/50 transition-all inline-flex items-center gap-2">
                 <Download size={18} />
                 Download Full Resume
               </button>
@@ -355,9 +355,9 @@ export default function PortfolioSite() {
       <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">Let's Connect</span>
+            <span className="bg-gradient-to-r from-gray-300 via-gray-400 to-teal-400 bg-clip-text text-transparent">Let's Connect</span>
           </h2>
-          
+
           <p className="text-gray-300 text-lg mb-12">
             Interested in discussing LLMs, healthcare tech, sustainable engineering cultures, or just want to chat? I'd love to hear from you.
           </p>
@@ -365,7 +365,7 @@ export default function PortfolioSite() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
               href="mailto:helenalucia@fastmail.com"
-              className="px-8 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-pink-500 font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all flex items-center justify-center gap-2"
+              className="px-8 py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 font-semibold hover:shadow-lg hover:shadow-gray-500/50 transition-all flex items-center justify-center gap-2"
             >
               <Mail size={20} />
               Email Me
@@ -374,7 +374,7 @@ export default function PortfolioSite() {
               href="https://linkedin.com/in/helena-lucia"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 rounded-lg border-2 border-teal-400 font-semibold hover:bg-teal-400/10 transition-all flex items-center justify-center gap-2"
+              className="px-8 py-3 rounded-lg border-2 border-gray-400 font-semibold hover:bg-gray-400/10 transition-all flex items-center justify-center gap-2"
             >
               <Linkedin size={20} />
               LinkedIn
@@ -397,7 +397,7 @@ export default function PortfolioSite() {
       </section>
 
       {/* Footer */}
-      <footer className="relative border-t border-teal-500/20 py-8 px-4 text-center text-gray-400">
+      <footer className="relative border-t border-gray-500/20 py-8 px-4 text-center text-gray-400">
         <p>Built with React, Tailwind, and ❤️ | Deployed on Vercel</p>
       </footer>
 
