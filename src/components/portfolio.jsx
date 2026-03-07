@@ -229,20 +229,24 @@ export default function PortfolioSite() {
             <span className="bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent">Learning & Growth</span>
           </h2>
 
+          <div className="mb-8 bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-400/30 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-teal-300 mb-3">Coursera Specializations (2025-2026)</h3>
+            <ul className="text-gray-300 space-y-2 text-sm">
+              <li>✓ <strong>Real-World AI for Everyone</strong> (Anthropic)</li>
+              <li>✓ <strong>Generative AI Software Engineering</strong> (Vanderbilt University)</li>
+              <li>✓ <strong>AI Agent Developer</strong> (Vanderbilt University)</li>
+            </ul>
+          </div>
+
           <div className="space-y-4">
             <div className="bg-gradient-to-r from-teal-500/10 to-blue-500/10 border border-teal-400/30 rounded-lg p-6 hover:border-blue-400/50 transition-all">
-              <h3 className="font-bold text-lg text-teal-300 mb-2">Generative AI Fundamentals (Coursera, 2025)</h3>
-              <p className="text-gray-300 text-sm">Deep dive into LLM architectures, prompt engineering, and application design</p>
-            </div>
-
-            <div className="bg-gradient-to-r from-teal-500/10 to-gray-500/10 border border-teal-400/30 rounded-lg p-6 hover:border-gray-400/50 transition-all">
-              <h3 className="font-bold text-lg text-gray-300 mb-2">Building AI Systems (Coursera, 2025)</h3>
-              <p className="text-gray-300 text-sm">RAG pipelines, vector embeddings, retrieval strategies, evaluation frameworks</p>
+              <h3 className="font-bold text-lg text-teal-300 mb-2">14+ Advanced Courses (Perfect Scores)</h3>
+              <p className="text-gray-300 text-sm leading-relaxed">Claude Code: Software Engineering with Generative AI Agents (100%) • AI Fundamentals with Claude (100%) • Trustworthy Generative AI (100%) • Introduction to Model Context Protocol (100%) • Vibe Coding with Claude Code (100%) • OpenAI GPTs: Custom AI Assistants (100%) • AI Agents & Agentic AI Architecture (100%) • Plus 7 additional courses at 90%+ grades</p>
             </div>
 
             <div className="bg-gradient-to-r from-gray-500/10 to-gray-400/10 border border-gray-400/30 rounded-lg p-6 hover:border-gray-400/50 transition-all">
-              <h3 className="font-bold text-lg text-gray-300 mb-2">Applied ML & LLM Projects</h3>
-              <p className="text-gray-300 text-sm">Built Meno using cutting-edge LLM integration, vector search, and ethical AI principles</p>
+              <h3 className="font-bold text-lg text-gray-300 mb-2">Focus Areas</h3>
+              <p className="text-gray-300 text-sm">LLM architectures • Agentic AI • Prompt engineering • Claude API integration • Responsible AI • Model Context Protocol • Modern AI development practices</p>
             </div>
           </div>
         </div>
