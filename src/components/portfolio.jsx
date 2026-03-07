@@ -346,10 +346,10 @@ export default function PortfolioSite() {
 
             <div className="mt-8 text-center">
               <p className="text-gray-400 text-sm mb-4">View detailed resume as PDF or scroll up for full career timeline</p>
-              <button className="px-8 py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 font-semibold hover:shadow-lg hover:shadow-gray-500/50 transition-all inline-flex items-center gap-2">
+              <a href="/helena-lucia-resume.pdf" download className="px-8 py-3 rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 font-semibold hover:shadow-lg hover:shadow-gray-500/50 transition-all inline-flex items-center gap-2">
                 <Download size={18} />
                 Download Full Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>
