@@ -33,7 +33,7 @@ export default function PortfolioSite() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-gray-300 via-gray-400 to-teal-400 bg-clip-text text-transparent">
-              Helena
+              Helena Lucia
             </div>
             
             {/* Desktop Menu */}
