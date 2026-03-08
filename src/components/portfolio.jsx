@@ -395,7 +395,7 @@ export default function PortfolioSite() {
           </div>
 
           <p className="text-gray-400 text-sm">
-            Currently looking for interesting engineering problems in ethical organizations. Open to full-time, contract, or project-based work.
+            Currently looking for interesting engineering problems in ethical organizations.
           </p>
         </div>
       </section>
