@@ -164,7 +164,7 @@ export default function PortfolioSite() {
 
             <div className="bg-gradient-to-br from-teal-500/10 to-gray-500/10 border border-teal-400/30 rounded-lg p-6">
               <h3 className="text-lg font-bold text-gray-400 mb-2">The Solution</h3>
-              <p className="text-gray-300">Full-stack web app with symptom tracking, evidence-based AI chat (Claude API), and provider directory.</p>
+              <p className="text-gray-300">Full-stack web app with symptom tracking, evidence-based AI chat (Retrieval Augmented Generation pipeline), and provider directory.</p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-500/10 to-gray-400/10 border border-gray-400/30 rounded-lg p-6">
