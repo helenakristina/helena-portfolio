@@ -5,9 +5,28 @@ export default function PortfolioSite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
+  const [visibleSections, setVisibleSections] = useState({});
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+
+      // Check which sections are visible
+      const sections = ['home', 'about', 'meno', 'learning', 'work', 'resume', 'contact'];
+      const newVisibleSections = {};
+
+      sections.forEach(sectionId => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // Element is visible when its top is less than 75% down the viewport
+          newVisibleSections[sectionId] = rect.top < window.innerHeight * 0.75;
+        }
+      });
+
+      setVisibleSections(newVisibleSections);
+    };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -118,7 +137,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* About / Story Section */}
-      <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="about"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['about'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['about'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">The Journey</span>
@@ -149,7 +176,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* Meno Section */}
-      <section id="meno" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="meno"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['meno'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['meno'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">Meno</span>
@@ -223,7 +258,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* Learning Section */}
-      <section id="learning" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="learning"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['learning'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['learning'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent">Learning & Growth</span>
@@ -253,7 +296,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* Past Work Section */}
-      <section id="work" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="work"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['work'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['work'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">Selected Work</span>
@@ -314,7 +365,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="resume"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['resume'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['resume'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">
             <span className="bg-gradient-to-r from-teal-400 to-gray-400 bg-clip-text text-transparent">Resume</span>
@@ -356,7 +415,15 @@ export default function PortfolioSite() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        id="contact"
+        className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 scroll-mt-16 ${
+          visibleSections['contact'] ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          transform: visibleSections['contact'] ? 'translateY(0)' : 'translateY(40px)'
+        }}
+      >
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             <span className="bg-gradient-to-r from-gray-300 via-gray-400 to-teal-400 bg-clip-text text-transparent">Let's Connect</span>
