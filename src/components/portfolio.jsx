@@ -323,7 +323,7 @@ export default function PortfolioSite() {
           <div className="bg-gradient-to-br from-slate-800/30 to-teal-900/30 border border-teal-400/30 rounded-lg p-8">
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-white mb-2">Helena Lucia</h3>
-              <p className="text-gray-300 mb-2">Senior Software Engineer | Full-Stack Data Solutions | LLM/AI Systems</p>
+              <p className="text-gray-300 mb-2">Senior Software Engineer | Python Data Solutions | LLM/AI Systems</p>
               <div className="flex flex-wrap gap-4 text-sm text-gray-400">
                 <span>📧 helenalucia@fastmail.com</span>
                 <span>📱 (952) 686-3189</span>
@@ -334,7 +334,7 @@ export default function PortfolioSite() {
             <div className="border-t border-teal-400/30 pt-6">
               <h4 className="text-lg font-bold text-gray-400 mb-3">Core Skills</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Python 3.9+ • Data Analysis & ML (Pandas, NumPy, TensorFlow, Keras) • LLM Systems (Claude API, RAG, vector embeddings) • Data Visualization (Plotly, Matplotlib, Bokeh) • Backend APIs (FastAPI, Flask) • Cloud Platforms (AWS, GCP, Supabase) • Infrastructure (Docker, Kubernetes, Terraform) • Databases (PostgreSQL, Elasticsearch, Neo4J) • Full-Stack Development (SvelteKit, React) • Leadership & Mentorship
+                Python 3.9+ • Data Analysis & ML (Pandas, NumPy, TensorFlow, Keras) • LLM Systems (Claude API, RAG, vector embeddings) • Data Visualization (Plotly, Matplotlib, Bokeh) • Backend APIs (FastAPI, Flask) • Cloud Platforms (AWS, GCP, Supabase) • Infrastructure (Docker, Kubernetes, Terraform) • Databases (PostgreSQL, Elasticsearch, Neo4J) • Full-Stack Development (SvelteKit) • Leadership & Mentorship
               </p>
             </div>
 
