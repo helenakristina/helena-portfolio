@@ -1,21 +1,13 @@
-'use client';
+import type { Metadata } from 'next';
 
-import { useState, useEffect } from 'react';
+export const metadata: Metadata = {
+  title: 'Meno — Healthcare App by Helena Lucia',
+  description: 'A full-stack healthcare app with symptom tracking, AI chat (Claude API), and provider directory.',
+};
 
 export default function Meno() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <section
-      className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-      style={{ transform: isVisible ? 'translateY(0)' : 'translateY(40px)' }}
-    >
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">
           <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Meno</span>

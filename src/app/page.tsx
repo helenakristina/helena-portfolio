@@ -1,23 +1,15 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 
+export const metadata: Metadata = {
+  title: 'Helena Lucia — Senior Engineer',
+  description: 'Senior software engineer returning to tech with LLM expertise, building ethical AI solutions.',
+};
+
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <section
-      className={`pt-32 pb-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-      style={{ transform: isVisible ? 'translateY(0)' : 'translateY(40px)' }}
-    >
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-6 animate-fade-in">
           <h1 className="text-5xl sm:text-7xl font-bold leading-tight">

@@ -17,14 +17,11 @@ const routes = [
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   const isActive = (path: string) => pathname === path;
 

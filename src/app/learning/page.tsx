@@ -1,9 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useMountAnimation } from '@/hooks/useMountAnimation';
 
 export default function Learning() {
-  const [isVisible, setIsVisible] = useState(false);
+  const isVisible = useMountAnimation();
   const [counters, setCounters] = useState({
     courses: 0,
     specializations: 0,
@@ -11,24 +12,26 @@ export default function Learning() {
   });
 
   useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  useEffect(() => {
     if (!isVisible) return;
     const interval = setInterval(() => {
-      setCounters(prev => ({
-        courses: Math.min(prev.courses + 1, 14),
-        specializations: Math.min(prev.specializations + 1, 3),
-        years: Math.min(prev.years + 1, 12),
-      }));
+      setCounters(prev => {
+        const next = {
+          courses: Math.min(prev.courses + 1, 14),
+          specializations: Math.min(prev.specializations + 1, 3),
+          years: Math.min(prev.years + 1, 12),
+        };
+        if (next.courses === 14 && next.specializations === 3 && next.years === 12) {
+          clearInterval(interval);
+        }
+        return next;
+      });
     }, 30);
     return () => clearInterval(interval);
   }, [isVisible]);
 
   return (
     <section
-      className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
+      className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-[opacity,transform] duration-700 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       style={{ transform: isVisible ? 'translateY(0)' : 'translateY(40px)' }}

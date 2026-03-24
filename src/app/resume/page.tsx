@@ -1,22 +1,14 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import type { Metadata } from 'next';
 import { Download } from 'lucide-react';
 
+export const metadata: Metadata = {
+  title: 'Helena Lucia — Resume',
+  description: 'Senior Software Engineer with 12+ years experience in data solutions, LLM systems, and full-stack development.',
+};
+
 export default function Resume() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <section
-      className={`relative py-20 px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-      style={{ transform: isVisible ? 'translateY(0)' : 'translateY(40px)' }}
-    >
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">
           <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Resume</span>
