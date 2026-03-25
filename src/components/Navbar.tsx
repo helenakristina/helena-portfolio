@@ -11,6 +11,7 @@ const routes = [
   { label: 'meno', path: '/meno' },
   { label: 'learning', path: '/learning' },
   { label: 'work', path: '/work' },
+  { label: 'process', path: '/process' },
   { label: 'resume', path: '/resume' },
   { label: 'contact', path: '/contact' },
 ];
