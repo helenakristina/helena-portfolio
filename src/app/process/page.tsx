@@ -130,7 +130,19 @@ export default function Process() {
           no questions about how to implement something — the code is
           consistent, and the file structure is predictable.
         </p>
-
+        <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16 text-lg leading-relaxed">
+          I&apos;m using the{" "}
+          <a
+            href="https://every.to/guides/compound-engineering"
+            className="text-teal-400 hover:text-teal-300 underline"
+          >
+            Compound Engineering
+          </a>{" "}
+          approach. The idea is the same as compound interest — small,
+          consistent investments in the process lead to exponential improvements
+          over time. Every feature is an opportunity to learn and make the next
+          one better.
+        </p>
         {/* Workflow stages */}
         <div className="relative">
           {/* Vertical connecting line */}
