@@ -138,7 +138,7 @@ export default function Process() {
 
           <div className="space-y-6">
             {stages.map((stage, index) => {
-              const colors = colorMap[stage.color];
+              const colors = colorMap[stage.color as keyof typeof colorMap];
               return (
                 <div key={index} className="relative md:pl-16">
                   {/* Timeline dot */}
