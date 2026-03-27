@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import type { Metadata } from "next";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Helena Lucia — Contact',
-  description: 'Get in touch with Helena Lucia — open to full-time, contract, or project-based engineering work.',
+  title: "Helena Lucia — Contact",
+  description: "Get in touch with Helena Lucia- open to engineering work.",
 };
 
 export default function Contact() {
@@ -11,11 +11,14 @@ export default function Contact() {
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Let's Connect</span>
+          <span className="bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            Let's Connect
+          </span>
         </h2>
 
         <p className="text-gray-300 text-lg mb-12">
-          Interested in discussing LLMs, healthcare tech, sustainable engineering cultures, or just want to chat? I'd love to hear from you.
+          Interested in discussing LLMs, healthcare tech, sustainable
+          engineering cultures, or just want to chat? I'd love to hear from you.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -47,7 +50,8 @@ export default function Contact() {
         </div>
 
         <p className="text-gray-400 text-sm">
-          Currently looking for interesting engineering problems in ethical organizations. Open to full-time, contract, or project-based work.
+          Currently looking for interesting engineering problems in purposeful
+          organizations.
         </p>
       </div>
     </section>

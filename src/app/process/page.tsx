@@ -1,26 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Helena Lucia — The Process",
+  title: "Helena Lucia - The Process",
   description:
-    "How I approach agentic engineering, AI, and building products that actually help people.",
+    "How I approach agentic engineering, AI, and building products that have quality baked in.",
 };
 
 import React from "react";
 
 const stages = [
   {
-    title: "Collaborative design",
+    title: "Collaborative Design",
     subtitle: "PRD iterations with Opus until it's solid",
     description:
-      'Every feature starts with a conversation. I brainstorm with Claude Opus to build a product requirements document, going back and forth until the scope is clear, the edge cases are covered, and we both agree on what "done" looks like. This is where the thinking happens — and it\'s where I spend the most time.',
+      'Every feature starts with a conversation. I brainstorm with Claude Opus, going back and forth until the scope is clear, the edge cases are covered, and we both agree on what "done" looks like. This is where the thinking happens. The artifact that comes out of this is a PRD that guides the implementation and serves as a reference point for the code review.',
     timeWidth: "w-full",
     color: "purple",
     humanIntensity: "high",
   },
   {
-    title: "Structured planning",
-    subtitle: "ce:plan — approve before any code is written",
+    title: "Structured Planning",
+    subtitle: "ce:plan approve before any code is written",
     description:
       "The PRD becomes a concrete implementation plan with defined steps, file-level changes, and dependency ordering. I review and approve the plan before a single line of code gets written. No plan, no code.",
     timeWidth: "w-3/5",
@@ -28,25 +28,25 @@ const stages = [
     humanIntensity: "medium",
   },
   {
-    title: "Test-driven development",
+    title: "Test-Driven Development",
     subtitle: "ce:work with CATCHES annotations",
     description:
-      "Tests get written first. Every test includes a CATCHES annotation describing the specific bug it prevents — no tests that just exercise the mock library. The implementation follows the tests, not the other way around.",
+      "Tests get written first. Every test includes a CATCHES annotation describing the specific bug it prevents, no tests that just exercise the mock library. The implementation follows the tests, not the other way around.",
     timeWidth: "w-2/5",
     color: "teal",
     humanIntensity: "low",
   },
   {
-    title: "Manual testing",
+    title: "Manual Testing",
     subtitle: "Feature walkthrough",
     description:
-      "Once the tests pass, I do a hands-on walkthrough of the feature to catch the things automated tests miss — visual issues, workflow gaps, edge cases that only surface when you actually use the thing.",
+      "Once the tests pass, I do a hands-on walkthrough of the feature to catch the things automated tests miss: visual issues, workflow gaps, edge cases that only surface when you actually use the thing.",
     timeWidth: "w-2/5",
     color: "teal",
     humanIntensity: "medium",
   },
   {
-    title: "Automated review",
+    title: "Automated Review",
     subtitle: "ce:review + resolve todos",
     description:
       "An automated review surfaces bugs, security issues, and code quality problems. It generates prioritized todos that I triage — deciding what gets fixed now, what gets deferred, and what gets dismissed.",
@@ -55,16 +55,16 @@ const stages = [
     humanIntensity: "low",
   },
   {
-    title: "Human code review",
+    title: "Human Code Review",
     subtitle: "Read every line of code and every test",
     description:
-      "This is the other stage where I invest the most time. I read every line of code and every test in the PR. Even when the implementation code is complex, I can grasp what each test asserts — and if the tests make sense, the code has a contract I can verify. This is non-negotiable.",
+      "This is the other stage where I invest the most time. I read every line of code and every test in the PR. Even when the implementation code is complex, I can grasp what each test asserts, and if the tests make sense, the code has a contract I can verify.",
     timeWidth: "w-full",
     color: "slate",
     humanIntensity: "high",
   },
   {
-    title: "Merge + memorialize",
+    title: "Merge & Memorialize",
     subtitle: "ce:compound — learnings feed the next cycle",
     description:
       "After merge, I capture what worked, what didn't, and what the system learned. These learnings feed directly into the next feature cycle, so the process gets better over time.",
@@ -118,17 +118,18 @@ export default function Process() {
           How I Work
         </h2>
         <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16 text-lg leading-relaxed">
-          I practice agentic engineering — AI accelerates the implementation,
-          but human judgment owns the beginning and the end. The longest stages
-          in my process are the ones that require understanding: designing the
+          I practice agentic engineering. AI accelerates the implementation, but
+          human judgment owns the beginning and the end. The longest stages in
+          my process are the ones that require understanding: designing the
           right thing to build, and reading every line of code before it ships.
         </p>
         <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16 text-lg leading-relaxed">
-          I also start with Claude Code skills. A skill for backend development
-          that covers my design standards. A skill for frontend development that
-          does the same. A skill for test-driven development. That way there are
-          no questions about how to implement something — the code is
-          consistent, and the file structure is predictable.
+          I start with Claude Code skills. I create a skill for backend
+          development that covers my design standards, and a skill for frontend
+          development that does the same. Also, I create a skill for test-driven
+          development. That way there are no questions about how to implement
+          something, the code is consistent, and the file structure is
+          predictable.
         </p>
         <p className="text-gray-300 text-center max-w-2xl mx-auto mb-16 text-lg leading-relaxed">
           I&apos;m using the{" "}
@@ -138,10 +139,11 @@ export default function Process() {
           >
             Compound Engineering
           </a>{" "}
-          approach. The idea is the same as compound interest — small,
-          consistent investments in the process lead to exponential improvements
-          over time. Every feature is an opportunity to learn and make the next
-          one better.
+          approach and plugin. The idea is the same as compound interest...
+          small, consistent investments in the process lead to exponential
+          improvements over time. Every unit of work is an opportunity to learn
+          and make the next one better. The compound engineering plugin
+          doesn&apos;t do TDD out of the box, but my skill enforces it.
         </p>
         {/* Workflow stages */}
         <div className="relative">
@@ -216,16 +218,17 @@ export default function Process() {
             Why this is my philosophy
           </h3>
           <p className="text-gray-300 leading-relaxed mb-4">
-            AI can write code faster than I can. But writing code was never the
-            hard part. The hard part is knowing what to build, understanding why
-            it matters, and being confident that what shipped actually works. My
-            process puts human judgment where it counts — at the design table
-            and in the code review — while letting AI handle the implementation.
+            AI can write code faster than I can, but writing code is not the
+            hard part. The difficult part is knowing what to build and being
+            confident that what is shipped actually works, is high quality, and
+            is maintainable. My process puts human judgment where it counts, at
+            the design stage and in the code review, while letting AI handle the
+            implementation (with guardrails).
           </p>
           <p className="text-gray-300 leading-relaxed">
             Every PR I merge, I can explain. Every test I approve, I understand
             what it catches. Every feature I ship, I know why it exists.
-            That&apos;s not vibe coding. That&apos;s engineering.
+            That&apos;s my agentic engineering process.
           </p>
         </div>
       </div>

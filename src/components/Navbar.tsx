@@ -7,12 +7,10 @@ import { Menu, X } from 'lucide-react';
 
 const routes = [
   { label: 'home', path: '/' },
-  { label: 'about', path: '/about' },
   { label: 'meno', path: '/meno' },
   { label: 'learning', path: '/learning' },
   { label: 'work', path: '/work' },
   { label: 'process', path: '/process' },
-  { label: 'resume', path: '/resume' },
   { label: 'contact', path: '/contact' },
 ];
 
