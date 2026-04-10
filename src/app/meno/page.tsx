@@ -200,8 +200,17 @@ export default function Meno() {
             </p>
           </div>
 
+          <p className="mt-8 text-sm">
+            <a
+              href="/process"
+              className="text-teal-400 hover:text-teal-300 underline"
+            >
+              &rarr; How I work: helena-lucia.vercel.app/process
+            </a>
+          </p>
+
           {/* Tech stack callout */}
-          <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-8">
+          <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-4">
             <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm">
               <div>
                 <p className="text-teal-400 font-semibold">Frontend</p>
@@ -234,14 +243,6 @@ export default function Meno() {
             </div>
           </div>
 
-          <p className="mt-4 text-sm">
-            <a
-              href="/process"
-              className="text-teal-400 hover:text-teal-300 underline"
-            >
-              &rarr; How I work: helena-lucia.vercel.app/process
-            </a>
-          </p>
         </div>
 
         {/* 7. Where It's Going */}
