@@ -83,7 +83,7 @@ export default function Home() {
               women worldwide, most of whom are dismissed by a healthcare system
               that doesn&apos;t understand them. Meno combines symptom tracking,
               appointment preparation, a provider directory, and an AI-powered
-              Q&amp;A tool backed by a RAG pipeline searching 49,000 research
+              Q&amp;A tool backed by a RAG pipeline searching 10,000+ research
               documents. I built it using an agentic engineering workflow with
               Claude Code, and I&apos;m actively developing it toward
               launch.{" "}

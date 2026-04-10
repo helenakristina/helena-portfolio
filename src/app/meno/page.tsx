@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -74,12 +75,9 @@ export default function Meno() {
         {/* 4. What Meno Does */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-6">What Meno Does</h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
-
-            <p>
-              Finding a menopause specialist isn&rsquo;t a one-call process. You search, you filter by insurance, you leave voicemails, you wait. Meno holds that process &mdash; a searchable directory of NAMS-certified providers, filterable by state, provider type, and insurance plan, with a shortlist where you track who you&rsquo;ve called, who called back, and who you&rsquo;ve booked.
-            </p>
-          </div>
+          <p className="text-gray-300 leading-relaxed">
+            Finding a menopause specialist isn&rsquo;t a one-call process. You search, you filter by insurance, you leave voicemails, you wait. Meno holds that process &mdash; a searchable directory of NAMS-certified providers, filterable by state, provider type, and insurance plan, with a shortlist where you track who you&rsquo;ve called, who called back, and who you&rsquo;ve booked.
+          </p>
 
           <div className="mt-6">
             <Image
@@ -87,6 +85,8 @@ export default function Meno() {
               alt="Provider directory showing NAMS-certified specialists with a shortlist tracking call status"
               width={900}
               height={643}
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
               className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
             />
             <p className="text-sm text-gray-500 text-center mt-2 mb-8">
@@ -94,11 +94,9 @@ export default function Meno() {
             </p>
           </div>
 
-          <div className="text-gray-300 leading-relaxed space-y-4">
-            <p>
-              When you&rsquo;re ready to call, Meno generates a script personalized to that provider and your insurance: the provider&rsquo;s name, your specific plan, and the right questions to ask before you book. The number is right there. You don&rsquo;t have to go search for it.
-            </p>
-          </div>
+          <p className="text-gray-300 leading-relaxed">
+            When you&rsquo;re ready to call, Meno generates a script personalized to that provider and your insurance: the provider&rsquo;s name, your specific plan, and the right questions to ask before you book. The number is right there. You don&rsquo;t have to go search for it.
+          </p>
 
           <div className="mt-6">
             <Image
@@ -106,6 +104,7 @@ export default function Meno() {
               alt="Calling script modal personalized with provider name and insurance plan"
               width={900}
               height={709}
+              sizes="(max-width: 768px) 100vw, 768px"
               className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
             />
             <p className="text-sm text-gray-500 text-center mt-2 mb-8">
@@ -113,11 +112,9 @@ export default function Meno() {
             </p>
           </div>
 
-          <div className="text-gray-300 leading-relaxed space-y-4">
-            <p>
-              Once you have an appointment, the preparation starts. Meno asks a few questions: new provider or established relationship, what you&rsquo;re hoping to get out of the visit, and whether you&rsquo;ve been dismissed before. Then it does something most tools don&rsquo;t: it reads your symptom logs and your medication history, and it writes your story back to you in your own words. First person. Your symptoms, your patterns, your medications, in the order that matters. You read it, you edit it, and what you approve goes directly into your provider summary... verbatim, unchanged. Your doctor reads your words, not a generated report about you.
-            </p>
-          </div>
+          <p className="text-gray-300 leading-relaxed">
+            Once you have an appointment, the preparation starts. Meno asks a few questions: new provider or established relationship, what you&rsquo;re hoping to get out of the visit, and whether you&rsquo;ve been dismissed before. Then it does something most tools don&rsquo;t: it reads your symptom logs and your medication history, and it writes your story back to you in your own words. First person. Your symptoms, your patterns, your medications, in the order that matters. You read it, you edit it, and what you approve goes directly into your provider summary... verbatim, unchanged. Your doctor reads your words, not a generated report about you.
+          </p>
 
           <div className="mt-6">
             <Image
@@ -125,6 +122,7 @@ export default function Meno() {
               alt="Appointment prep step 2: narrative health picture edit screen in first-person voice"
               width={900}
               height={608}
+              sizes="(max-width: 768px) 100vw, 768px"
               className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
             />
             <p className="text-sm text-gray-500 text-center mt-2 mb-8">
@@ -132,11 +130,9 @@ export default function Meno() {
             </p>
           </div>
 
-          <div className="text-gray-300 leading-relaxed space-y-4">
-            <p>
-              The rest of the appointment prep builds from there. You prioritize your concerns in the order you want to raise them. You answer two questions: what have you already tried, and what specifically do you want to leave with today. Then Meno pulls from 10,000 curated research documents to surface the dismissals most likely to come up in your appointment, and gives you evidence-based language to respond to each one.
-            </p>
-          </div>
+          <p className="text-gray-300 leading-relaxed">
+            The rest of the appointment prep builds from there. You prioritize your concerns in the order you want to raise them. You answer two questions: what have you already tried, and what specifically do you want to leave with today. Then Meno pulls from 10,000+ curated research documents to surface the dismissals most likely to come up in your appointment, and gives you evidence-based language to respond to each one.
+          </p>
 
           <div className="mt-6">
             <Image
@@ -144,6 +140,7 @@ export default function Meno() {
               alt="Practice scenarios for navigating dismissal, with RAG-backed source citations"
               width={900}
               height={651}
+              sizes="(max-width: 768px) 100vw, 768px"
               className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
             />
             <p className="text-sm text-gray-500 text-center mt-2 mb-8">
@@ -151,11 +148,9 @@ export default function Meno() {
             </p>
           </div>
 
-          <div className="text-gray-300 leading-relaxed space-y-4">
-            <p>
-              You walk in with two documents: a provider summary your doctor can read in two minutes, and a personal cheatsheet that&rsquo;s yours to hold in the room. Prioritized concerns. Questions grouped by topic. And a section called &ldquo;If Things Go Sideways&rdquo;, because sometimes they do.
-            </p>
-          </div>
+          <p className="text-gray-300 leading-relaxed">
+            You walk in with two documents: a provider summary your doctor can read in two minutes, and a personal cheatsheet that&rsquo;s yours to hold in the room. Prioritized concerns. Questions grouped by topic. And a section called &ldquo;If Things Go Sideways&rdquo;, because sometimes they do.
+          </p>
         </div>
 
         {/* 5. The Mental Health Dimension */}
@@ -187,7 +182,7 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6">How It&rsquo;s Built</h2>
           <div className="text-gray-300 leading-relaxed space-y-4">
             <p>
-              Meno is a full-stack application built with SvelteKit and TypeScript on the frontend, FastAPI and Python on the backend, and Supabase for PostgreSQL storage and authentication with row-level security. The AI layer currently uses the OpenAI API for LLM calls, with the architecture designed from the start for a clean migration to Claude API at production; dependency injection throughout means swapping providers requires changing one file. pgvector handles semantic search across 10,000 curated research documents: PubMed papers and clinical references selected for relevance to menopause and perimenopause, not just dumped in bulk.
+              Meno is a full-stack application built with SvelteKit and TypeScript on the frontend, FastAPI and Python on the backend, and Supabase for PostgreSQL storage and authentication with row-level security. The AI layer currently uses the OpenAI API for LLM calls, with the architecture designed from the start for a clean migration to Claude API at production; dependency injection throughout means swapping providers requires changing one file. pgvector handles semantic search across 10,000+ curated research documents: PubMed papers and clinical references selected for relevance to menopause and perimenopause, not just dumped in bulk.
             </p>
             <p>
               The RAG pipeline is the core of Ask Meno. When a user asks a question, it&rsquo;s embedded and matched against the document index using cosine similarity with an hnsw vector index, then passed to the LLM with a five-layer prompt system that controls voice, citation format, and medical safety boundaries. The result is a response that cites its sources at the paragraph level that reads like a knowledgeable friend who happens to have read the research.
@@ -201,12 +196,12 @@ export default function Meno() {
           </div>
 
           <p className="mt-8 text-sm">
-            <a
+            <Link
               href="/process"
               className="text-teal-400 hover:text-teal-300 underline"
             >
-              &rarr; How I work: helena-lucia.vercel.app/process
-            </a>
+              &rarr; How I work
+            </Link>
           </p>
 
           {/* Tech stack callout */}
@@ -286,10 +281,7 @@ export default function Meno() {
               {/* Predictive Analytics */}
               <div className="flex flex-col items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <line x1="18" y1="20" x2="18" y2="10" strokeLinecap="round" />
-                  <line x1="12" y1="20" x2="12" y2="4" strokeLinecap="round" />
-                  <line x1="6" y1="20" x2="6" y2="14" strokeLinecap="round" />
-                  <line x1="3" y1="20" x2="21" y2="20" strokeLinecap="round" />
+                  <path d="M18 20V10M12 20V4M6 20V14M3 20h18" strokeLinecap="round" />
                 </svg>
                 <p className="text-gray-400 text-sm text-center">Predictive Analytics</p>
               </div>
