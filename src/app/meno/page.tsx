@@ -265,17 +265,42 @@ export default function Meno() {
           {/* Roadmap icon row */}
           <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-8">
             <div className="grid grid-cols-4 gap-4 mb-8">
-              {[
-                { icon: '📱', label: 'Mobile App' },
-                { icon: '⌚', label: 'Apple Watch Integration' },
-                { icon: '📊', label: 'Predictive Analytics' },
-                { icon: '🏥', label: 'Provider Dashboard' },
-              ].map(({ icon, label }) => (
-                <div key={label} className="flex flex-col items-center gap-2">
-                  <span className="text-3xl">{icon}</span>
-                  <p className="text-gray-400 text-sm text-center">{label}</p>
-                </div>
-              ))}
+              {/* Mobile App */}
+              <div className="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" strokeLinecap="round" />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">Mobile App</p>
+              </div>
+              {/* Apple Watch Integration */}
+              <div className="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <rect x="7" y="7" width="10" height="10" rx="2" />
+                  <path d="M7 10H4M7 14H4M17 10h3M17 14h3" strokeLinecap="round" />
+                  <path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M9 17v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2" strokeLinecap="round" />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">Apple Watch Integration</p>
+              </div>
+              {/* Predictive Analytics */}
+              <div className="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <line x1="18" y1="20" x2="18" y2="10" strokeLinecap="round" />
+                  <line x1="12" y1="20" x2="12" y2="4" strokeLinecap="round" />
+                  <line x1="6" y1="20" x2="6" y2="14" strokeLinecap="round" />
+                  <line x1="3" y1="20" x2="21" y2="20" strokeLinecap="round" />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">Predictive Analytics</p>
+              </div>
+              {/* Provider Dashboard */}
+              <div className="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 22V12h6v10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M12 7v4M10 9h4" strokeLinecap="round" />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">Provider Dashboard</p>
+              </div>
             </div>
 
             {/* Market stats */}
