@@ -349,6 +349,167 @@ export default function Meno() {
                   Claude Code, Compound Engineering, PRD-first
                 </p>
               </div>
+              <div>
+                <p className="text-teal-400 font-semibold">Auth</p>
+                <p className="text-gray-300">
+                  Supabase RLS (row-level security)
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 font-semibold">PDF</p>
+                <p className="text-gray-300">
+                  ReportLab (structured, Pydantic-validated)
+                </p>
+              </div>
+              <div className="col-span-2">
+                <p className="text-teal-400 font-semibold">Process</p>
+                <p className="text-gray-300">
+                  Claude Code, Compound Engineering, PRD-first
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 7. Where It's Going */}
+        <div>
+          <h2 className="text-2xl font-bold text-white mb-6">
+            Where It&rsquo;s Going
+          </h2>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p>Meno is designed to grow with the data it collects.</p>
+            <p>
+              The next juncture is mobile: a native app with Apple Watch
+              integration for passive data collection. HRV, sleep quality, skin
+              temperature. The hypothesis is that wearable data can surface
+              patterns before a woman logs them: a drop in heart rate
+              variability in the days before a symptom cluster, an early warning
+              that something is coming. The nervous system often knows before
+              the conscious mind does.
+            </p>
+            <p>
+              From there, predictive analytics. Not &ldquo;here are your
+              patterns&rdquo; but &ldquo;here&rsquo;s what&rsquo;s likely coming
+              and when.&rdquo; Symptom forecasting based on individual history,
+              with alerts that give a woman time to prepare rather than react.
+            </p>
+            <p>
+              On the provider side, an anonymized dashboard: aggregate symptom
+              patterns across a patient population, dose adjustment tracking
+              over time, the kind of longitudinal data that a menopause
+              specialist currently has no systematic way to collect. Research
+              partnerships built on consented, anonymized data that
+              doesn&rsquo;t exist anywhere else at scale.
+            </p>
+          </div>
+
+          {/* Roadmap icon row */}
+          <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-8">
+            <div className="grid grid-cols-4 gap-4 mb-8">
+              {/* Mobile App */}
+              <div className="flex flex-col items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-8 h-8 text-teal-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line
+                    x1="12"
+                    y1="18"
+                    x2="12.01"
+                    y2="18"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">Mobile App</p>
+              </div>
+              {/* Apple Watch Integration */}
+              <div className="flex flex-col items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-8 h-8 text-teal-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <rect x="7" y="7" width="10" height="10" rx="2" />
+                  <path
+                    d="M7 10H4M7 14H4M17 10h3M17 14h3"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M9 17v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">
+                  Apple Watch Integration
+                </p>
+              </div>
+              {/* Predictive Analytics */}
+              <div className="flex flex-col items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-8 h-8 text-teal-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    d="M18 20V10M12 20V4M6 20V14M3 20h18"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">
+                  Predictive Analytics
+                </p>
+              </div>
+              {/* Provider Dashboard */}
+              <div className="flex flex-col items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-8 h-8 text-teal-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M9 22V12h6v10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path d="M12 7v4M10 9h4" strokeLinecap="round" />
+                </svg>
+                <p className="text-gray-400 text-sm text-center">
+                  Provider Dashboard
+                </p>
+              </div>
+            </div>
+
+            {/* Market stats */}
+            <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
+              {[
+                { stat: "$63B", label: "Femtech market 2025" },
+                { stat: "$600B", label: "Menopause market by 2030" },
+                { stat: "7%", label: "of femtech focused on menopause" },
+              ].map(({ stat, label }) => (
+                <div key={label} className="text-center">
+                  <p className="text-teal-400 text-3xl font-bold">{stat}</p>
+                  <p className="text-gray-400 text-sm mt-1">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
