@@ -26,6 +26,16 @@ export default function Meno() {
             &ldquo;Building What Matters: for the billion women whose doctors
             don&rsquo;t understand menopause&rdquo;
           </p>
+          <p className="mt-6">
+            <a
+              href="https://meno-hazel.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-300 underline"
+            >
+              &rarr; View live app
+            </a>
+          </p>
         </div>
 
         {/* 2. The Problem Is Personal */}
@@ -317,7 +327,7 @@ export default function Meno() {
               </div>
               <div>
                 <p className="text-teal-400 font-semibold">Backend</p>
-                <p className="text-gray-300">FastAPI + Python, Railway</p>
+                <p className="text-gray-300">FastAPI + Python, Render</p>
               </div>
               <div>
                 <p className="text-teal-400 font-semibold">Database</p>
