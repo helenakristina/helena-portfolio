@@ -55,8 +55,7 @@ export default function Meno() {
               I&rsquo;d asked about by name. She offered birth control instead.
               When I asked about vaginal estrogen for the dryness and urgency
               I&rsquo;d been managing with a pelvic floor physical therapist,
-              she suggested lube. My heart was in my throat. I asked for a
-              referral to a specialist.
+              she suggested lube. I asked for a referral to a specialist.
             </p>
             <p>She seemed a little irked when I found one myself.</p>
             <p>
@@ -230,13 +229,12 @@ export default function Meno() {
             </p>
             <p>
               The cognitive and psychiatric symptoms are the ones nobody warns
-              you about, and the ones most likely to be misattributed,
-              misdiagnosed, or dismissed entirely. Brain fog that makes
-              technical work feel impossible. Anxiety that emerges in your late
-              forties with no prior history and no obvious cause. Depression
-              that travels with hot flashes and cognitive cloudiness so
-              consistently that the pattern shows up in the data. Sleep
-              disruption that compounds everything.
+              women about, and the ones most likely to be misattributed,
+              misdiagnosed, or dismissed entirely. Brain fog that interferes
+              with work and daily life. New-onset anxiety in the late forties
+              with no prior history. Depression that travels with hot flashes
+              and cognitive cloudiness so consistently that the pattern shows up
+              in the data. Sleep disruption that compounds everything.
             </p>
             <p>
               These symptoms don&rsquo;t get talked about because they&rsquo;re
@@ -248,21 +246,17 @@ export default function Meno() {
             </p>
             <p>
               Meno is one of the few tools that takes the mental health
-              dimension of menopause seriously. Ask Meno can answer questions
-              about the cognitive and psychiatric symptoms most apps won&rsquo;t
-              touch because the research exists, and women deserve access to it.
+              dimension of menopause seriously. Ask Meno answers questions about
+              the cognitive and psychiatric symptoms most apps won&rsquo;t
+              touch, because the research exists and women deserve access to it.
               The appointment prep flow surfaces dismissal scenarios specific to
               mental health presentations, because &ldquo;that sounds like
               anxiety, you need an antidepressant&rdquo; is one of the most
               common things a perimenopausal woman hears, and there is
-              evidence-based language available to respond to it.
+              evidence-based language available to respond to it. The dots
+              exist. Meno connects them
             </p>
           </div>
-
-          {/* Pull quote */}
-          <blockquote className="border-l-4 border-teal-400 pl-6 my-8 text-xl md:text-2xl text-teal-300 italic">
-            &ldquo;The dots exist. Meno connects them.&rdquo;
-          </blockquote>
         </div>
 
         {/* 6. How It's Built */}
