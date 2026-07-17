@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Helena's Portfolio",
-  description: "A showcase of my work and projects as a software developer.",
+  title: "Helena Lucia",
+  description:
+    "Senior software engineer building AI tools for the billion women whose doctors don't understand menopause. A decade of data engineering experience, LLM and RAG expertise.",
 };
 
 export default function RootLayout({

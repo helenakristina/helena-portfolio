@@ -2,29 +2,25 @@ import type { Metadata } from "next";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Helena Lucia — Contact",
-  description: "Get in touch with Helena Lucia- open to engineering work.",
+  title: "Helena Lucia – Contact",
+  description: "Get in touch with Helena Lucia – open to engineering work.",
 };
 
 export default function Contact() {
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Let's Connect
-          </span>
-        </h2>
+        <h1 className="text-4xl font-bold text-white mb-6">Let&apos;s Connect</h1>
 
-        <p className="text-gray-300 text-lg mb-12">
+        <p className="text-ink-muted text-lg mb-12">
           Interested in discussing LLMs, healthcare tech, sustainable
-          engineering cultures, or just want to chat? I'd love to hear from you.
+          engineering cultures, or just want to chat? I&apos;d love to hear from you.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
             href="mailto:helenalucia@fastmail.com"
-            className="px-8 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-cyan-500 font-semibold hover:shadow-lg hover:shadow-teal-500/50 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+            className="px-8 py-3 bg-accent text-[var(--bg)] font-semibold hover:bg-accent-deep transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <Mail size={20} />
             Email Me
@@ -33,7 +29,7 @@ export default function Contact() {
             href="https://linkedin.com/in/helena-lucia"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 rounded-lg border-2 border-teal-400 font-semibold hover:bg-teal-400/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+            className="px-8 py-3 border border-white/25 text-white font-semibold hover:border-white transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <Linkedin size={20} />
             LinkedIn
@@ -42,14 +38,14 @@ export default function Contact() {
             href="https://github.com/helenakristina"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 rounded-lg border-2 border-cyan-400 font-semibold hover:bg-cyan-400/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+            className="px-8 py-3 border border-white/25 text-white font-semibold hover:border-white transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <Github size={20} />
             GitHub
           </a>
         </div>
 
-        <p className="text-gray-400 text-sm">
+        <p className="text-ink-muted text-sm">
           Currently looking for interesting engineering problems in purposeful
           organizations.
         </p>

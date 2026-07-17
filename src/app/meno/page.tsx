@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Meno — Healthcare App by Helena Lucia",
+  title: "Meno – Healthcare App by Helena Lucia",
   description:
     "A full-stack healthcare app for women navigating menopause — symptom tracking, evidence-based AI, provider directory, and appointment prep.",
 };
@@ -14,26 +14,15 @@ export default function Meno() {
       <div className="max-w-3xl mx-auto space-y-16">
         {/* 1. Page Header */}
         <div className="text-center">
-          <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-4">
-            Case Study
-          </p>
-          <h1 className="text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
-              Meno
-            </span>
-          </h1>
-          <p className="text-gray-400 text-xl">
-            &ldquo;Building What Matters: for the billion women whose doctors
-            don&rsquo;t understand menopause&rdquo;
-          </p>
+          <h1 className="text-5xl font-bold text-white mb-6">Meno</h1>
           <p className="mt-6">
             <a
               href="https://meno-hazel.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-400 hover:text-teal-300 underline"
+              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
             >
-              &rarr; View live app
+              View live app →
             </a>
           </p>
         </div>
@@ -43,7 +32,7 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6">
             The Problem Is Personal
           </h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
+          <div className="text-ink-muted leading-relaxed space-y-4">
             <p>
               I came prepared. I&rsquo;d done the research, written the email,
               gotten a yes. My doctor would discuss hormone therapy at my next
@@ -84,11 +73,10 @@ export default function Meno() {
         {/* 3. The Insight */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-6">The Insight</h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
+          <div className="text-ink-muted leading-relaxed space-y-4">
             <p>
-              Before my specialist appointment, I did something most women
-              don&rsquo;t have the resources to do. I spent hours researching
-              the evidence, logging my symptoms, and preparing a document:
+              Before my specialist appointment, I spent hours researching the
+              evidence, logging my symptoms, and preparing a document:
               prioritized symptom list, scripted opening statement, questions
               grouped by topic, and responses ready if things went sideways. I
               walked in knowing exactly what I wanted to ask for and why.
@@ -97,10 +85,10 @@ export default function Meno() {
             <p>
               But I&rsquo;m a software engineer with time, research skills, and
               the stubbornness to go around a system that wasn&rsquo;t working
-              for me. Most women don&rsquo;t have that combination. They have
-              ten minutes with a doctor who may not be trained in menopause, no
-              data to back up what they&rsquo;re feeling, and no language for
-              what&rsquo;s happening to them.
+              for me. Most women don&rsquo;t have those resources. They have ten
+              minutes with a doctor who may not be trained in menopause (most
+              aren&rsquo;t), no data to back up what they&rsquo;re feeling, and
+              no language for what&rsquo;s happening to them.
             </p>
             <p>That&rsquo;s what Meno is for.</p>
           </div>
@@ -109,13 +97,13 @@ export default function Meno() {
         {/* 4. What Meno Does */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-6">What Meno Does</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-ink-muted leading-relaxed">
             Finding a menopause specialist isn&rsquo;t a one-call process. You
             search, you filter by insurance, you leave voicemails, you wait.
-            Meno holds that process &mdash; a searchable directory of
-            NAMS-certified providers, filterable by state, provider type, and
-            insurance plan, with a shortlist where you track who you&rsquo;ve
-            called, who called back, and who you&rsquo;ve booked.
+            Meno holds that process: a searchable directory of NAMS-certified
+            providers, filterable by state, provider type, and insurance plan,
+            with a shortlist where you track who you&rsquo;ve called, who called
+            back, and who you&rsquo;ve booked.
           </p>
 
           <div className="mt-6">
@@ -126,14 +114,14 @@ export default function Meno() {
               height={643}
               priority
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
+              className="rounded-xl border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-gray-500 text-center mt-2 mb-8">
+            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Provider directory with shortlist; track every call in one place
             </p>
           </div>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-ink-muted leading-relaxed">
             When you&rsquo;re ready to call, Meno generates a script
             personalized to that provider and your insurance: the
             provider&rsquo;s name, your specific plan, and the right questions
@@ -148,24 +136,22 @@ export default function Meno() {
               width={900}
               height={709}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
+              className="rounded-xl border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-gray-500 text-center mt-2 mb-8">
+            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Calling script generated for this provider and this insurance plan
             </p>
           </div>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-ink-muted leading-relaxed">
             Once you have an appointment, the preparation starts. Meno asks a
             few questions: new provider or established relationship, what
             you&rsquo;re hoping to get out of the visit, and whether
-            you&rsquo;ve been dismissed before. Then it does something most
-            tools don&rsquo;t: it reads your symptom logs and your medication
-            history, and it writes your story back to you in your own words.
-            First person. Your symptoms, your patterns, your medications, in the
-            order that matters. You read it, you edit it, and what you approve
-            goes directly into your provider summary... verbatim, unchanged.
-            Your doctor reads your words, not a generated report about you.
+            you&rsquo;ve been dismissed before. Then it reads your symptom logs
+            and your medication history, and it writes your story back to you in
+            your own words. (First person.) Your symptoms, your patterns, your
+            medications. You read it, you edit it, and what you approve goes
+            directly into your provider summary... verbatim, unchanged.
           </p>
 
           <div className="mt-6">
@@ -175,15 +161,15 @@ export default function Meno() {
               width={900}
               height={608}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
+              className="rounded-xl border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-gray-500 text-center mt-2 mb-8">
+            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Your health picture, written in your voice, edited by you,
               delivered to your provider word for word
             </p>
           </div>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-ink-muted leading-relaxed">
             The rest of the appointment prep builds from there. You prioritize
             your concerns in the order you want to raise them. You answer two
             questions: what have you already tried, and what specifically do you
@@ -200,20 +186,20 @@ export default function Meno() {
               width={900}
               height={651}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-white/20 shadow-xl w-full h-auto"
+              className="rounded-xl border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-gray-500 text-center mt-2 mb-8">
+            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Practice scenarios backed by real research so you&rsquo;re ready
               if things go sideways
             </p>
           </div>
 
-          <p className="text-gray-300 leading-relaxed">
-            You walk in with two documents: a provider summary your doctor can
-            read in two minutes, and a personal cheatsheet that&rsquo;s yours to
-            hold in the room. Prioritized concerns. Questions grouped by topic.
-            And a section called &ldquo;If Things Go Sideways&rdquo;, because
-            sometimes they do.
+          <p className="text-ink-muted leading-relaxed">
+            You walk in (PREPARED!) with two documents: a provider summary your
+            doctor can read in two minutes, and a personal cheatsheet
+            that&rsquo;s yours to hold in the room. Prioritized concerns.
+            Questions grouped by topic. And a section called &ldquo;If Things Go
+            Sideways&rdquo;, because sometimes they do.
           </p>
         </div>
 
@@ -222,7 +208,7 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6">
             The Mental Health Dimension
           </h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
+          <div className="text-ink-muted leading-relaxed space-y-4">
             <p>
               Menopause doesn&rsquo;t just change your body. It changes your
               brain.
@@ -247,14 +233,13 @@ export default function Meno() {
             <p>
               Meno is one of the few tools that takes the mental health
               dimension of menopause seriously. Ask Meno answers questions about
-              the cognitive and psychiatric symptoms most apps won&rsquo;t
-              touch, because the research exists and women deserve access to it.
-              The appointment prep flow surfaces dismissal scenarios specific to
-              mental health presentations, because &ldquo;that sounds like
-              anxiety, you need an antidepressant&rdquo; is one of the most
-              common things a perimenopausal woman hears, and there is
-              evidence-based language available to respond to it. The dots
-              exist. Meno connects them
+              the cognitive and psychiatric symptoms, because the research
+              exists and women deserve access to it. The appointment prep flow
+              surfaces dismissal scenarios specific to mental health
+              presentations, because &ldquo;that sounds like anxiety, you need
+              an antidepressant&rdquo; is one of the most common things a
+              perimenopausal woman hears, and there is evidence-based language
+              available to respond to it. The dots exist. Meno connects them.
             </p>
           </div>
         </div>
@@ -264,18 +249,19 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6">
             How It&rsquo;s Built
           </h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
+          <div className="text-ink-muted leading-relaxed space-y-4">
             <p>
               Meno is a full-stack application built with SvelteKit and
-              TypeScript on the frontend, FastAPI and Python on the backend, and
+              TypeScript on the frontend, Python/FastAPI on the backend, and
               Supabase for PostgreSQL storage and authentication with row-level
               security. The AI layer currently uses the OpenAI API for LLM
               calls, with the architecture designed from the start for a clean
-              migration to Claude API at production; dependency injection
+              migration to Claude API in production; dependency injection
               throughout means swapping providers requires changing one file.
               pgvector handles semantic search across 10,000+ curated research
-              documents: PubMed papers and clinical references selected for
-              relevance to menopause and perimenopause, not just dumped in bulk.
+              documents: PubMed papers and clinical references are curated for
+              relevance to menopause and perimenopause, with special emphasis on
+              mental health topics.
             </p>
             <p>
               The RAG pipeline is the core of Ask Meno. When a user asks a
@@ -284,72 +270,73 @@ export default function Meno() {
               passed to the LLM with a five-layer prompt system that controls
               voice, citation format, and medical safety boundaries. The result
               is a response that cites its sources at the paragraph level that
-              reads like a knowledgeable friend who happens to have read the
+              reads like a knowledgeable friend who happens to have done the
               research.
             </p>
             <p>
               The appointment prep flow makes six structured LLM calls:
               narrative generation, symptom summary, provider questions,
               scenario suggestions backed by RAG retrieval, and two structured
-              PDF outputs validated by Pydantic models. Hard fail on parse
-              errors. A partial or empty clinical document is worse than none.
+              PDF outputs validated by Pydantic models. It will hard fail on
+              parse errors. A partial or empty clinical document is worse than
+              none.
             </p>
             <p>
               The entire application was built using a disciplined agentic
-              engineering workflow... PRD-first, TDD with CATCHES annotations,
-              Claude Code with custom skill files enforcing architectural
+              engineering workflow: PRD-first, TDD with CATCHES annotations,
+              Claude Code with custom skills/rules files enforcing architectural
               conventions, and line-by-line human code review before every
               merge.
             </p>
           </div>
 
-          <p className="mt-8 text-sm">
+          <p className="mt-8">
             <Link
               href="/process"
-              className="text-teal-400 hover:text-teal-300 underline"
+              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
             >
-              &rarr; How I work
+              How I work →
             </Link>
           </p>
 
           {/* Tech stack callout */}
-          <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-4">
+          <div className="border border-border-subtle p-6 mt-4">
             <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm">
               <div>
-                <p className="text-teal-400 font-semibold">Frontend</p>
-                <p className="text-gray-300">SvelteKit + TypeScript, Vercel</p>
+                <p className="text-accent font-semibold">Frontend</p>
+                <p className="text-ink-muted">SvelteKit + TypeScript, Vercel</p>
               </div>
               <div>
-                <p className="text-teal-400 font-semibold">Backend</p>
-                <p className="text-gray-300">FastAPI + Python, Render</p>
+                <p className="text-accent font-semibold">Backend</p>
+                <p className="text-ink-muted">FastAPI + Python, Render</p>
               </div>
               <div>
-                <p className="text-teal-400 font-semibold">Database</p>
-                <p className="text-gray-300">
+                <p className="text-accent font-semibold">Database</p>
+                <p className="text-ink-muted">
                   Supabase (PostgreSQL + pgvector)
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 font-semibold">AI</p>
-                <p className="text-gray-300">
+                <p className="text-accent font-semibold">AI</p>
+                <p className="text-ink-muted">
                   OpenAI API &rarr; Claude API (production), hnsw vector index
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 font-semibold">Auth</p>
-                <p className="text-gray-300">
+                <p className="text-accent font-semibold">Auth</p>
+                <p className="text-ink-muted">
                   Supabase RLS (row-level security)
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 font-semibold">PDF</p>
-                <p className="text-gray-300">
+                <p className="text-accent font-semibold">PDF</p>
+                <p className="text-ink-muted">
                   ReportLab (structured, Pydantic-validated)
                 </p>
               </div>
               <div className="col-span-2">
-                <p className="text-teal-400 font-semibold">Process</p>
-                <p className="text-gray-300">
+                <p className="text-accent font-semibold">Process</p>
+                <p className="text-ink-muted">
                   Claude Code, Compound Engineering, PRD-first
                 </p>
               </div>
@@ -362,7 +349,7 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6">
             Where It&rsquo;s Going
           </h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
+          <div className="text-ink-muted leading-relaxed space-y-4">
             <p>Meno is designed to grow with the data it collects.</p>
             <p>
               The next juncture is mobile: a native app with Apple Watch
@@ -390,14 +377,14 @@ export default function Meno() {
             </p>
           </div>
 
-          {/* Roadmap icon row */}
-          <div className="backdrop-blur-md bg-white/5 border border-white/20 rounded-2xl p-6 mt-8">
+          {/* Roadmap */}
+          <div className="border border-border-subtle p-6 mt-8">
             <div className="grid grid-cols-4 gap-4 mb-8">
               {/* Mobile App */}
               <div className="flex flex-col items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-teal-400"
+                  className="w-8 h-8 text-accent"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -412,13 +399,13 @@ export default function Meno() {
                     strokeLinecap="round"
                   />
                 </svg>
-                <p className="text-gray-400 text-sm text-center">Mobile App</p>
+                <p className="text-ink-muted text-sm text-center">Mobile App</p>
               </div>
               {/* Apple Watch Integration */}
               <div className="flex flex-col items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-teal-400"
+                  className="w-8 h-8 text-accent"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -434,7 +421,7 @@ export default function Meno() {
                     strokeLinecap="round"
                   />
                 </svg>
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-ink-muted text-sm text-center">
                   Apple Watch Integration
                 </p>
               </div>
@@ -442,7 +429,7 @@ export default function Meno() {
               <div className="flex flex-col items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-teal-400"
+                  className="w-8 h-8 text-accent"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -453,7 +440,7 @@ export default function Meno() {
                     strokeLinecap="round"
                   />
                 </svg>
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-ink-muted text-sm text-center">
                   Predictive Analytics
                 </p>
               </div>
@@ -461,7 +448,7 @@ export default function Meno() {
               <div className="flex flex-col items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-teal-400"
+                  className="w-8 h-8 text-accent"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -479,22 +466,22 @@ export default function Meno() {
                   />
                   <path d="M12 7v4M10 9h4" strokeLinecap="round" />
                 </svg>
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-ink-muted text-sm text-center">
                   Provider Dashboard
                 </p>
               </div>
             </div>
 
             {/* Market stats */}
-            <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
+            <div className="grid grid-cols-3 gap-4 border-t border-border-subtle pt-6">
               {[
                 { stat: "$63B", label: "Femtech market 2025" },
                 { stat: "$600B", label: "Menopause market by 2030" },
                 { stat: "7%", label: "of femtech focused on menopause" },
               ].map(({ stat, label }) => (
                 <div key={label} className="text-center">
-                  <p className="text-teal-400 text-3xl font-bold">{stat}</p>
-                  <p className="text-gray-400 text-sm mt-1">{label}</p>
+                  <p className="text-accent text-3xl font-bold">{stat}</p>
+                  <p className="text-ink-muted text-sm mt-1">{label}</p>
                 </div>
               ))}
             </div>
@@ -503,7 +490,7 @@ export default function Meno() {
 
         {/* 8. Closing */}
         <div className="pt-12 max-w-2xl mx-auto text-center">
-          <div className="text-lg text-gray-200 leading-relaxed space-y-4">
+          <div className="text-lg text-white leading-relaxed space-y-4">
             <p>
               Menopause affects every woman who lives long enough. And yet for
               most of us, it arrives as a surprise, our mothers didn&rsquo;t
@@ -522,7 +509,7 @@ export default function Meno() {
         </div>
 
         {/* 9. Footnotes */}
-        <div className="border-t border-white/10 mt-16 pt-8 text-xs text-gray-600">
+        <div className="border-t border-border-subtle mt-16 pt-8 text-xs text-ink-muted">
           <p className="mb-1">Sources</p>
           <p>
             1. Allen JT et al. Menopause. 2023;30(10):1002-1005.
