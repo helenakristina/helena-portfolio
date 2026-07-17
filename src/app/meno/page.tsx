@@ -13,23 +13,25 @@ export default function Meno() {
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto space-y-16">
         {/* 1. Page Header */}
-        <div className="text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">Meno</h1>
-          <p className="mt-6">
-            <a
-              href="https://meno-hazel.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
-            >
-              View live app →
-            </a>
+        <div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Meno</h1>
+          <p className="text-ink-muted mb-8">
+            A full-stack healthcare app for women navigating menopause — provider directory, evidence-based appointment prep, and RAG-powered clinical Q&amp;A.
           </p>
+          <a
+            href="https://meno-hazel.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View live app (opens in new tab)"
+            className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+          >
+            View live app →
+          </a>
         </div>
 
         {/* 2. The Problem Is Personal */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             The Problem Is Personal
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
@@ -72,7 +74,7 @@ export default function Meno() {
 
         {/* 3. The Insight */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">The Insight</h2>
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">The Insight</h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
             <p>
               Before my specialist appointment, I spent hours researching the
@@ -96,8 +98,8 @@ export default function Meno() {
 
         {/* 4. What Meno Does */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">What Meno Does</h2>
-          <p className="text-ink-muted leading-relaxed">
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">What Meno Does</h2>
+          <p className="text-ink-muted leading-relaxed text-pretty">
             Finding a menopause specialist isn&rsquo;t a one-call process. You
             search, you filter by insurance, you leave voicemails, you wait.
             Meno holds that process: a searchable directory of NAMS-certified
@@ -114,14 +116,14 @@ export default function Meno() {
               height={643}
               priority
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-border-subtle w-full h-auto"
+              className="border border-border-subtle w-full h-auto"
             />
             <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Provider directory with shortlist; track every call in one place
             </p>
           </div>
 
-          <p className="text-ink-muted leading-relaxed">
+          <p className="text-ink-muted leading-relaxed text-pretty">
             When you&rsquo;re ready to call, Meno generates a script
             personalized to that provider and your insurance: the
             provider&rsquo;s name, your specific plan, and the right questions
@@ -136,14 +138,14 @@ export default function Meno() {
               width={900}
               height={709}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-border-subtle w-full h-auto"
+              className="border border-border-subtle w-full h-auto"
             />
             <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Calling script generated for this provider and this insurance plan
             </p>
           </div>
 
-          <p className="text-ink-muted leading-relaxed">
+          <p className="text-ink-muted leading-relaxed text-pretty">
             Once you have an appointment, the preparation starts. Meno asks a
             few questions: new provider or established relationship, what
             you&rsquo;re hoping to get out of the visit, and whether
@@ -161,7 +163,7 @@ export default function Meno() {
               width={900}
               height={608}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-border-subtle w-full h-auto"
+              className="border border-border-subtle w-full h-auto"
             />
             <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Your health picture, written in your voice, edited by you,
@@ -169,7 +171,7 @@ export default function Meno() {
             </p>
           </div>
 
-          <p className="text-ink-muted leading-relaxed">
+          <p className="text-ink-muted leading-relaxed text-pretty">
             The rest of the appointment prep builds from there. You prioritize
             your concerns in the order you want to raise them. You answer two
             questions: what have you already tried, and what specifically do you
@@ -186,7 +188,7 @@ export default function Meno() {
               width={900}
               height={651}
               sizes="(max-width: 768px) 100vw, 768px"
-              className="rounded-xl border border-border-subtle w-full h-auto"
+              className="border border-border-subtle w-full h-auto"
             />
             <p className="text-sm text-ink-muted text-center mt-2 mb-8">
               Practice scenarios backed by real research so you&rsquo;re ready
@@ -194,8 +196,8 @@ export default function Meno() {
             </p>
           </div>
 
-          <p className="text-ink-muted leading-relaxed">
-            You walk in (PREPARED!) with two documents: a provider summary your
+          <p className="text-ink-muted leading-relaxed text-pretty">
+            You walk in — prepared — with two documents: a provider summary your
             doctor can read in two minutes, and a personal cheatsheet
             that&rsquo;s yours to hold in the room. Prioritized concerns.
             Questions grouped by topic. And a section called &ldquo;If Things Go
@@ -205,7 +207,7 @@ export default function Meno() {
 
         {/* 5. The Mental Health Dimension */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             The Mental Health Dimension
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
@@ -246,7 +248,7 @@ export default function Meno() {
 
         {/* 6. How It's Built */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             How It&rsquo;s Built
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
@@ -290,18 +292,9 @@ export default function Meno() {
             </p>
           </div>
 
-          <p className="mt-8">
-            <Link
-              href="/process"
-              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
-            >
-              How I work →
-            </Link>
-          </p>
-
-          {/* Tech stack callout */}
-          <div className="border border-border-subtle p-6 mt-4">
-            <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm">
+          {/* Tech stack */}
+          <div className="border border-border-subtle p-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
               <div>
                 <p className="text-accent font-semibold">Frontend</p>
                 <p className="text-ink-muted">SvelteKit + TypeScript, Vercel</p>
@@ -334,7 +327,7 @@ export default function Meno() {
                   ReportLab (structured, Pydantic-validated)
                 </p>
               </div>
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <p className="text-accent font-semibold">Process</p>
                 <p className="text-ink-muted">
                   Claude Code, Compound Engineering, PRD-first
@@ -342,11 +335,20 @@ export default function Meno() {
               </div>
             </div>
           </div>
+
+          <p className="mt-8">
+            <Link
+              href="/process"
+              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+            >
+              How I work →
+            </Link>
+          </p>
         </div>
 
         {/* 7. Where It's Going */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             Where It&rsquo;s Going
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
@@ -377,120 +379,11 @@ export default function Meno() {
             </p>
           </div>
 
-          {/* Roadmap */}
-          <div className="border border-border-subtle p-6 mt-8">
-            <div className="grid grid-cols-4 gap-4 mb-8">
-              {/* Mobile App */}
-              <div className="flex flex-col items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                >
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                  <line
-                    x1="12"
-                    y1="18"
-                    x2="12.01"
-                    y2="18"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <p className="text-ink-muted text-sm text-center">Mobile App</p>
-              </div>
-              {/* Apple Watch Integration */}
-              <div className="flex flex-col items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                >
-                  <rect x="7" y="7" width="10" height="10" rx="2" />
-                  <path
-                    d="M7 10H4M7 14H4M17 10h3M17 14h3"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M9 17v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <p className="text-ink-muted text-sm text-center">
-                  Apple Watch Integration
-                </p>
-              </div>
-              {/* Predictive Analytics */}
-              <div className="flex flex-col items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                >
-                  <path
-                    d="M18 20V10M12 20V4M6 20V14M3 20h18"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <p className="text-ink-muted text-sm text-center">
-                  Predictive Analytics
-                </p>
-              </div>
-              {/* Provider Dashboard */}
-              <div className="flex flex-col items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                >
-                  <path
-                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M9 22V12h6v10"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path d="M12 7v4M10 9h4" strokeLinecap="round" />
-                </svg>
-                <p className="text-ink-muted text-sm text-center">
-                  Provider Dashboard
-                </p>
-              </div>
-            </div>
-
-            {/* Market stats */}
-            <div className="grid grid-cols-3 gap-4 border-t border-border-subtle pt-6">
-              {[
-                { stat: "$63B", label: "Femtech market 2025" },
-                { stat: "$600B", label: "Menopause market by 2030" },
-                { stat: "7%", label: "of femtech focused on menopause" },
-              ].map(({ stat, label }) => (
-                <div key={label} className="text-center">
-                  <p className="text-accent text-3xl font-bold">{stat}</p>
-                  <p className="text-ink-muted text-sm mt-1">{label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* 8. Closing */}
-        <div className="pt-12 max-w-2xl mx-auto text-center">
-          <div className="text-lg text-white leading-relaxed space-y-4">
+        <div className="pt-12 max-w-prose">
+          <div className="text-lg text-white leading-relaxed space-y-4 text-pretty">
             <p>
               Menopause affects every woman who lives long enough. And yet for
               most of us, it arrives as a surprise, our mothers didn&rsquo;t
@@ -506,6 +399,21 @@ export default function Meno() {
               even if that someone is an app.
             </p>
           </div>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/contact"
+              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+            >
+              Get in touch →
+            </Link>
+            <Link
+              href="/work"
+              className="px-5 py-2.5 border border-white/25 text-white text-sm font-semibold tracking-wide hover:border-white transition-colors duration-200"
+            >
+              See the work →
+            </Link>
+          </div>
         </div>
 
         {/* 9. Footnotes */}
@@ -514,14 +422,6 @@ export default function Meno() {
           <p>
             1. Allen JT et al. Menopause. 2023;30(10):1002-1005.
             doi:10.1097/GME.0000000000002234
-          </p>
-          <p>
-            2. Astute Analytica. FemTech Market Report. January 2026.
-            astuteanalytica.com
-          </p>
-          <p>
-            3. PreScouter. The $600 Billion Menopause Market. 2024.
-            prescouter.com
           </p>
         </div>
       </div>

@@ -47,8 +47,8 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border-subtle">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-lg font-bold text-white mb-4">The work</h2>
-            <p className="text-ink-muted leading-relaxed text-[0.9375rem] max-w-prose">
+            <h2 className="text-lg font-bold text-white mb-4 text-balance">The work</h2>
+            <p className="text-ink-muted leading-relaxed text-[0.9375rem] max-w-prose text-pretty">
               A decade of data engineering across Intel, Cylance, Cox
               Automotive, and Flashpoint – 35 billion records, 20+ APIs,
               real-time breach detection at scale. In 2021 I stepped away with
@@ -63,19 +63,19 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h2 className="text-lg font-bold text-white mb-4">The approach</h2>
-            <p className="text-ink-muted leading-relaxed text-[0.9375rem] max-w-prose">
+            <h2 className="text-lg font-bold text-white mb-4 text-balance">The approach</h2>
+            <p className="text-ink-muted leading-relaxed text-[0.9375rem] max-w-prose text-pretty">
               Agentic engineering: AI accelerates the implementation, human
               judgment owns the design and the code review. Three Coursera AI
               specializations. Claude Certified Architect. Every PR I merge, I
-              can explain.{" "}
-              <Link
-                href="/process"
-                className="inline-block mt-4 px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
-              >
-                See the process →
-              </Link>
+              can explain.
             </p>
+            <Link
+              href="/process"
+              className="inline-block mt-4 px-5 py-3 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+            >
+              See the process →
+            </Link>
           </div>
         </div>
       </section>
