@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Meno – Healthcare App by Helena Lucia",
   description:
-    "A full-stack healthcare app for women navigating menopause — symptom tracking, evidence-based AI, provider directory, and appointment prep.",
+    "A full-stack healthcare app for women navigating menopause: symptom tracking, evidence-based AI, provider directory, and appointment prep.",
 };
 
 export default function Meno() {
@@ -16,14 +16,14 @@ export default function Meno() {
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Meno</h1>
           <p className="text-ink-muted mb-8">
-            A full-stack healthcare app for women navigating menopause — provider directory, evidence-based appointment prep, and RAG-powered clinical Q&amp;A.
+            A full-stack healthcare app for women navigating menopause: provider directory, evidence-based appointment prep, and RAG-powered clinical Q&amp;A.
           </p>
           <a
             href="https://meno-hazel.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View live app (opens in new tab)"
-            className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+            className="inline-block px-5 py-2.5 bg-accent text-black text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
           >
             View live app →
           </a>
@@ -48,7 +48,7 @@ export default function Meno() {
               I&rsquo;d been managing with a pelvic floor physical therapist,
               she suggested lube. I asked for a referral to a specialist.
             </p>
-            <p>She seemed a little irked when I found one myself.</p>
+            <p className="text-white">She seemed a little irked when I found one myself.</p>
             <p>
               She wasn&rsquo;t an outlier. Fewer than one in five OB-GYN
               residents receives formal training in menopause management. The
@@ -83,7 +83,7 @@ export default function Meno() {
               grouped by topic, and responses ready if things went sideways. I
               walked in knowing exactly what I wanted to ask for and why.
             </p>
-            <p>It worked. I left with a plan.</p>
+            <p className="text-white">It worked. I left with a plan.</p>
             <p>
               But I&rsquo;m a software engineer with time, research skills, and
               the stubbornness to go around a system that wasn&rsquo;t working
@@ -92,7 +92,7 @@ export default function Meno() {
               aren&rsquo;t), no data to back up what they&rsquo;re feeling, and
               no language for what&rsquo;s happening to them.
             </p>
-            <p>That&rsquo;s what Meno is for.</p>
+            <p className="text-white">That&rsquo;s what Meno is for.</p>
           </div>
         </div>
 
@@ -196,22 +196,28 @@ export default function Meno() {
             </p>
           </div>
 
-          <p className="text-ink-muted leading-relaxed text-pretty">
-            You walk in — prepared — with two documents: a provider summary your
-            doctor can read in two minutes, and a personal cheatsheet
-            that&rsquo;s yours to hold in the room. Prioritized concerns.
-            Questions grouped by topic. And a section called &ldquo;If Things Go
-            Sideways&rdquo;, because sometimes they do.
-          </p>
+          <div className="border border-border-subtle p-6 mt-6">
+            <p className="text-white text-sm font-semibold mb-4">You walk in with two documents</p>
+            <div className="space-y-4">
+              <div>
+                <p className="text-white text-sm font-semibold">Provider summary</p>
+                <p className="text-ink-muted text-sm leading-relaxed">Your doctor reads it in two minutes: your symptom history, medication list, and health narrative in your own words, approved verbatim.</p>
+              </div>
+              <div>
+                <p className="text-white text-sm font-semibold">Personal cheatsheet</p>
+                <p className="text-ink-muted text-sm leading-relaxed">Yours to hold in the room. Prioritized concerns, questions grouped by topic, and a section called &ldquo;If Things Go Sideways&rdquo; because sometimes they do.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* 5. The Mental Health Dimension */}
-        <div>
+        <div className="pt-8">
           <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             The Mental Health Dimension
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
-            <p>
+            <p className="text-white">
               Menopause doesn&rsquo;t just change your body. It changes your
               brain.
             </p>
@@ -339,9 +345,9 @@ export default function Meno() {
           <p className="mt-8">
             <Link
               href="/process"
-              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+              className="inline-block px-5 py-2.5 bg-accent text-black text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
             >
-              How I work →
+              How I work<span aria-hidden="true"> →</span>
             </Link>
           </p>
         </div>
@@ -352,7 +358,7 @@ export default function Meno() {
             Where It&rsquo;s Going
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
-            <p>Meno is designed to grow with the data it collects.</p>
+            <p>None of this is built yet. Here is where Meno goes next.</p>
             <p>
               The next juncture is mobile: a native app with Apple Watch
               integration for passive data collection. HRV, sleep quality, skin
@@ -403,15 +409,15 @@ export default function Meno() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="inline-block px-5 py-2.5 bg-accent text-[var(--bg)] text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+              className="inline-block px-5 py-2.5 bg-accent text-black text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
             >
-              Get in touch →
+              Get in touch<span aria-hidden="true"> →</span>
             </Link>
             <Link
               href="/work"
-              className="px-5 py-2.5 border border-white/25 text-white text-sm font-semibold tracking-wide hover:border-white transition-colors duration-200"
+              className="px-5 py-2.5 border border-white/50 text-white text-sm font-semibold tracking-wide hover:border-white transition-colors duration-200"
             >
-              See the work →
+              See the work<span aria-hidden="true"> →</span>
             </Link>
           </div>
         </div>
