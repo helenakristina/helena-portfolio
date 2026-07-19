@@ -15,18 +15,9 @@ export default function Meno() {
         {/* 1. Page Header */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Meno</h1>
-          <p className="text-ink-muted mb-8">
+          <p className="text-ink-muted">
             A full-stack healthcare app for women navigating menopause: provider directory, evidence-based appointment prep, and RAG-powered clinical Q&amp;A.
           </p>
-          <a
-            href="https://meno-hazel.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View live app (opens in new tab)"
-            className="inline-block px-5 py-2.5 bg-accent text-black text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
-          >
-            View live app →
-          </a>
         </div>
 
         {/* 2. The Problem Is Personal */}
@@ -245,9 +236,9 @@ export default function Meno() {
               exists and women deserve access to it. The appointment prep flow
               surfaces dismissal scenarios specific to mental health
               presentations, because &ldquo;that sounds like anxiety, you need
-              an antidepressant&rdquo; is one of the most common things a
+              an antidepressant&rdquo; is a common thing a
               perimenopausal woman hears, and there is evidence-based language
-              available to respond to it. The dots exist. Meno connects them.
+              available to respond to it.
             </p>
           </div>
         </div>
