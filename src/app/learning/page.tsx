@@ -11,17 +11,18 @@ export default function Learning() {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-16">Learning</h1>
+        <h1 className="text-4xl font-bold text-white mb-16 text-balance">Learning</h1>
 
         <div className="space-y-16">
           {/* Credentials */}
           <div>
-            <h2 className="text-lg font-bold text-white mb-8">Credentials</h2>
+            <h2 className="text-lg font-bold text-white mb-8 text-balance">Credentials</h2>
             <a
               href="https://www.credly.com/badges/40623774-dfb5-480a-93e1-520611cfc61c/public_url"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-6 group"
+              aria-label="Claude Certified Architect Foundations – verify on Credly (opens in new tab)"
+              className="inline-flex items-center gap-4 sm:gap-6 group"
             >
               <Image
                 src="/claude-certified-architect-foundations.png"
@@ -44,7 +45,7 @@ export default function Learning() {
 
           {/* Coursera Specializations */}
           <div className="border-t border-border-subtle pt-12">
-            <h2 className="text-lg font-bold text-white mb-2">
+            <h2 className="text-lg font-bold text-white mb-2 text-balance">
               Coursera Specializations
             </h2>
             <p className="text-ink-muted text-sm mb-8">2025–2026</p>
@@ -81,7 +82,7 @@ export default function Learning() {
 
           {/* Coursework */}
           <div className="border-t border-border-subtle pt-12">
-            <h2 className="text-lg font-bold text-white mb-2">Coursework</h2>
+            <h2 className="text-lg font-bold text-white mb-2 text-balance">Coursework</h2>
             <p className="text-ink-muted text-sm mb-8">
               18 courses – Coursera and Anthropic
             </p>
@@ -117,7 +118,7 @@ export default function Learning() {
 
           {/* Focus Areas */}
           <div className="border-t border-border-subtle pt-12">
-            <h2 className="text-lg font-bold text-white mb-8">Focus Areas</h2>
+            <h2 className="text-lg font-bold text-white mb-8 text-balance">Focus Areas</h2>
             <div className="flex flex-wrap gap-3">
               {[
                 "LLM architectures",

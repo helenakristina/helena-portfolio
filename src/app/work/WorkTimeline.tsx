@@ -10,7 +10,7 @@ export default function WorkTimeline() {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-16">Work</h1>
+        <h1 className="text-4xl font-bold text-white mb-16 text-balance">Work</h1>
 
         {/* Timeline */}
         <div className="relative pl-10">
@@ -44,7 +44,7 @@ export default function WorkTimeline() {
                     >
                       <div className="flex justify-between items-start gap-4">
                         <div>
-                          <h3 className="text-lg font-bold text-white">
+                          <h3 className="text-lg font-bold text-white text-balance">
                             {event.company}
                           </h3>
                           <p
@@ -73,7 +73,7 @@ export default function WorkTimeline() {
                           id={`job-detail-${idx}`}
                           className="mt-4 pt-4 border-t border-border-subtle animate-fade-in"
                         >
-                          <p className="text-ink-muted text-sm leading-relaxed">
+                          <p className="text-ink-muted text-sm leading-relaxed text-pretty">
                             {event.detail}
                           </p>
                         </div>

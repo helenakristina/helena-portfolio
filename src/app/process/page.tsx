@@ -62,8 +62,8 @@ export default function Process() {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-6">How I Work</h1>
-        <p className="text-ink-muted leading-relaxed mb-16 max-w-prose">
+        <h1 className="text-4xl font-bold text-white mb-6 text-balance">How I Work</h1>
+        <p className="text-ink-muted leading-relaxed mb-16 max-w-prose text-pretty">
           I practice agentic engineering: AI accelerates the implementation,
           human judgment owns the design and the code review. The process runs
           on{" "}
@@ -71,6 +71,7 @@ export default function Process() {
             href="https://every.to/guides/compound-engineering"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Compound Engineering (opens in new tab)"
             className="text-accent hover:text-white transition-colors duration-200"
           >
             Compound Engineering
@@ -87,7 +88,7 @@ export default function Process() {
               <div key={stage.title} className="relative">
                 <div className="absolute -left-10 top-[0.375rem] w-2 h-2 rounded-full -translate-x-1/2 bg-accent" />
                 <div className="border border-border-subtle p-5 hover:border-white/40 transition-colors duration-200">
-                  <h3 className="text-white font-bold">{stage.title}</h3>
+                  <h3 className="text-white font-bold text-balance">{stage.title}</h3>
                   <p className="text-ink-muted text-sm mt-0.5">
                     {stage.subtitle}
                     {stage.ceCommand && (
@@ -96,7 +97,7 @@ export default function Process() {
                       </code>
                     )}
                   </p>
-                  <p className="text-ink-muted text-sm leading-relaxed mt-3">
+                  <p className="text-ink-muted text-sm leading-relaxed mt-3 text-pretty">
                     {stage.description}
                   </p>
                 </div>
@@ -114,16 +115,16 @@ export default function Process() {
 
         {/* Philosophy */}
         <div className="mt-16 pt-12 border-t border-border-subtle">
-          <h3 className="text-lg font-bold text-white mb-4">
+          <h3 className="text-lg font-bold text-white mb-4 text-balance">
             Why this is my philosophy
           </h3>
-          <p className="text-ink-muted leading-relaxed mb-4 max-w-prose">
+          <p className="text-ink-muted leading-relaxed mb-4 max-w-prose text-pretty">
             AI can write code faster than I can, but writing code is not the
             hard part. The difficult part is knowing what to build and being
             confident that what ships actually works, is high quality, and is
             maintainable. My process puts human judgment where it counts.
           </p>
-          <p className="text-ink-muted leading-relaxed max-w-prose">
+          <p className="text-ink-muted leading-relaxed max-w-prose text-pretty">
             Every PR I merge, I can explain. Every test I approve, I understand
             what it catches. Every feature I ship, I know why it exists.
           </p>

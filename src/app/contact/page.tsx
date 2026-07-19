@@ -10,9 +10,9 @@ export default function Contact() {
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-4xl font-bold text-white mb-6">Let&apos;s Connect</h1>
+        <h1 className="text-4xl font-bold text-white mb-6 text-balance">Let&apos;s Connect</h1>
 
-        <p className="text-ink-muted text-lg mb-12">
+        <p className="text-ink-muted text-lg mb-12 text-pretty">
           Interested in discussing LLMs, healthcare tech, sustainable
           engineering cultures, or just want to chat? I&apos;d love to hear from you.
         </p>
@@ -29,6 +29,7 @@ export default function Contact() {
             href="https://linkedin.com/in/helena-lucia"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in new tab)"
             className="px-8 py-3 border border-white/25 text-white font-semibold hover:border-white transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <Linkedin size={20} />
@@ -38,6 +39,7 @@ export default function Contact() {
             href="https://github.com/helenakristina"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub (opens in new tab)"
             className="px-8 py-3 border border-white/25 text-white font-semibold hover:border-white transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <Github size={20} />
