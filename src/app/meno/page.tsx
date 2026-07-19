@@ -5,16 +5,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Meno – Healthcare App by Helena Lucia",
   description:
-    "A full-stack healthcare app for women navigating menopause: symptom tracking, evidence-based AI, provider directory, and appointment prep.",
+    "A full-stack healthcare app for women navigating menopause: provider directory, evidence-based appointment prep, and RAG-powered clinical Q&A.",
 };
 
 export default function Meno() {
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
+    <section aria-labelledby="meno-title" className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto space-y-16">
         {/* 1. Page Header */}
         <div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Meno</h1>
+          <h1 id="meno-title" className="text-4xl sm:text-5xl font-bold text-white mb-4">Meno</h1>
           <p className="text-ink-muted">
             A full-stack healthcare app for women navigating menopause: provider directory, evidence-based appointment prep, and RAG-powered clinical Q&amp;A.
           </p>
@@ -99,7 +99,7 @@ export default function Meno() {
             back, and who you&rsquo;ve booked.
           </p>
 
-          <div className="mt-6">
+          <figure className="mt-6">
             <Image
               src="/image_1.png"
               alt="Provider directory showing NAMS-certified specialists with a shortlist tracking call status"
@@ -109,20 +109,21 @@ export default function Meno() {
               sizes="(max-width: 768px) 100vw, 768px"
               className="border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
+            <figcaption className="text-sm text-ink-muted text-left sm:text-center mt-2 mb-8">
               Provider directory with shortlist; track every call in one place
-            </p>
-          </div>
+            </figcaption>
+          </figure>
 
+          <h3 className="text-base font-semibold text-white mb-2 text-balance">Calling script</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             When you&rsquo;re ready to call, Meno generates a script
             personalized to that provider and your insurance: the
             provider&rsquo;s name, your specific plan, and the right questions
             to ask before you book. The number is right there. You don&rsquo;t
-            have to go search for it.
+            have to search for it.
           </p>
 
-          <div className="mt-6">
+          <figure className="mt-6">
             <Image
               src="/image_2.png"
               alt="Calling script modal personalized with provider name and insurance plan"
@@ -131,11 +132,12 @@ export default function Meno() {
               sizes="(max-width: 768px) 100vw, 768px"
               className="border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
+            <figcaption className="text-sm text-ink-muted text-left sm:text-center mt-2 mb-8">
               Calling script generated for this provider and this insurance plan
-            </p>
-          </div>
+            </figcaption>
+          </figure>
 
+          <h3 className="text-base font-semibold text-white mb-2 text-balance">Appointment prep</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             Once you have an appointment, the preparation starts. Meno asks a
             few questions: new provider or established relationship, what
@@ -144,10 +146,10 @@ export default function Meno() {
             and your medication history, and it writes your story back to you in
             your own words. (First person.) Your symptoms, your patterns, your
             medications. You read it, you edit it, and what you approve goes
-            directly into your provider summary... verbatim, unchanged.
+            directly into your provider summary, verbatim.
           </p>
 
-          <div className="mt-6">
+          <figure className="mt-6">
             <Image
               src="/image_3.png"
               alt="Appointment prep step 2: narrative health picture edit screen in first-person voice"
@@ -156,12 +158,13 @@ export default function Meno() {
               sizes="(max-width: 768px) 100vw, 768px"
               className="border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
+            <figcaption className="text-sm text-ink-muted text-left sm:text-center mt-2 mb-8">
               Your health picture, written in your voice, edited by you,
               delivered to your provider word for word
-            </p>
-          </div>
+            </figcaption>
+          </figure>
 
+          <h3 className="text-base font-semibold text-white mb-2 text-balance">Practice scenarios</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             The rest of the appointment prep builds from there. You prioritize
             your concerns in the order you want to raise them. You answer two
@@ -172,7 +175,7 @@ export default function Meno() {
             respond to each one.
           </p>
 
-          <div className="mt-6">
+          <figure className="mt-6">
             <Image
               src="/image_4.png"
               alt="Practice scenarios for navigating dismissal, with RAG-backed source citations"
@@ -181,29 +184,29 @@ export default function Meno() {
               sizes="(max-width: 768px) 100vw, 768px"
               className="border border-border-subtle w-full h-auto"
             />
-            <p className="text-sm text-ink-muted text-center mt-2 mb-8">
+            <figcaption className="text-sm text-ink-muted text-left sm:text-center mt-2 mb-8">
               Practice scenarios backed by real research so you&rsquo;re ready
               if things go sideways
-            </p>
-          </div>
+            </figcaption>
+          </figure>
 
           <div className="border border-border-subtle p-6 mt-6">
             <p className="text-white text-sm font-semibold mb-4">You walk in with two documents</p>
-            <div className="space-y-4">
+            <dl className="space-y-4">
               <div>
-                <p className="text-white text-sm font-semibold">Provider summary</p>
-                <p className="text-ink-muted text-sm leading-relaxed">Your doctor reads it in two minutes: your symptom history, medication list, and health narrative in your own words, approved verbatim.</p>
+                <dt className="text-white text-sm font-semibold">Provider summary</dt>
+                <dd className="text-ink-muted text-sm leading-relaxed ml-0">Your doctor reads it in two minutes: your symptom history, medication list, and health narrative in your own words, approved verbatim.</dd>
               </div>
               <div>
-                <p className="text-white text-sm font-semibold">Personal cheatsheet</p>
-                <p className="text-ink-muted text-sm leading-relaxed">Yours to hold in the room. Prioritized concerns, questions grouped by topic, and a section called &ldquo;If Things Go Sideways&rdquo; because sometimes they do.</p>
+                <dt className="text-white text-sm font-semibold">Personal cheatsheet</dt>
+                <dd className="text-ink-muted text-sm leading-relaxed ml-0">Yours to hold in the room. Prioritized concerns, questions grouped by topic, and a section called &ldquo;If Things Go Sideways&rdquo; because sometimes they do.</dd>
               </div>
-            </div>
+            </dl>
           </div>
         </div>
 
         {/* 5. The Mental Health Dimension */}
-        <div className="pt-8">
+        <div>
           <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             The Mental Health Dimension
           </h2>
@@ -218,8 +221,8 @@ export default function Meno() {
               misdiagnosed, or dismissed entirely. Brain fog that interferes
               with work and daily life. New-onset anxiety in the late forties
               with no prior history. Depression that travels with hot flashes
-              and cognitive cloudiness so consistently that the pattern shows up
-              in the data. Sleep disruption that compounds everything.
+              and cognitive cloudiness in a cluster too consistent to be
+              coincidence. Sleep disruption that compounds everything.
             </p>
             <p>
               These symptoms don&rsquo;t get talked about because they&rsquo;re
@@ -258,9 +261,16 @@ export default function Meno() {
               migration to Claude API in production; dependency injection
               throughout means swapping providers requires changing one file.
               pgvector handles semantic search across 10,000+ curated research
-              documents: PubMed papers and clinical references are curated for
-              relevance to menopause and perimenopause, with special emphasis on
-              mental health topics.
+              documents: PubMed papers and clinical references covering
+              menopause, perimenopause, and mental health.
+            </p>
+            <p>
+              The appointment prep flow makes six structured LLM calls:
+              narrative generation, symptom summary, provider questions,
+              scenario suggestions backed by RAG retrieval, and two structured
+              PDF outputs validated by Pydantic models. It will hard fail on
+              parse errors. A partial or empty clinical document is worse than
+              none.
             </p>
             <p>
               The RAG pipeline is the core of Ask Meno. When a user asks a
@@ -271,14 +281,6 @@ export default function Meno() {
               is a response that cites its sources at the paragraph level that
               reads like a knowledgeable friend who happens to have done the
               research.
-            </p>
-            <p>
-              The appointment prep flow makes six structured LLM calls:
-              narrative generation, symptom summary, provider questions,
-              scenario suggestions backed by RAG retrieval, and two structured
-              PDF outputs validated by Pydantic models. It will hard fail on
-              parse errors. A partial or empty clinical document is worse than
-              none.
             </p>
             <p>
               The entire application was built using a disciplined agentic
@@ -336,7 +338,7 @@ export default function Meno() {
           <p className="mt-8">
             <Link
               href="/process"
-              className="inline-block px-5 py-2.5 bg-accent text-black text-sm font-semibold tracking-wide hover:bg-accent-deep transition-colors duration-200"
+              className="text-accent hover:text-white text-sm font-semibold tracking-wide transition-colors duration-200"
             >
               How I work<span aria-hidden="true"> →</span>
             </Link>
@@ -350,36 +352,28 @@ export default function Meno() {
           </h2>
           <div className="text-ink-muted leading-relaxed space-y-4">
             <p>None of this is built yet. Here is where Meno goes next.</p>
-            <p>
-              The next juncture is mobile: a native app with Apple Watch
-              integration for passive data collection. HRV, sleep quality, skin
-              temperature. The hypothesis is that wearable data can surface
-              patterns before a woman logs them: a drop in heart rate
-              variability in the days before a symptom cluster, an early warning
-              that something is coming. The nervous system often knows before
-              the conscious mind does.
-            </p>
-            <p>
-              From there, predictive analytics. Not &ldquo;here are your
-              patterns&rdquo; but &ldquo;here&rsquo;s what&rsquo;s likely coming
-              and when.&rdquo; Symptom forecasting based on individual history,
-              with alerts that give a woman time to prepare rather than react.
-            </p>
-            <p>
-              On the provider side, an anonymized dashboard: aggregate symptom
-              patterns across a patient population, dose adjustment tracking
-              over time, the kind of longitudinal data that a menopause
-              specialist currently has no systematic way to collect. Eventually,
-              research partnerships built on consented, anonymized data, with
-              explicit opt-in from every user. That data doesn&rsquo;t exist
-              anywhere else at scale.
-            </p>
+          </div>
+          <div className="border border-border-subtle p-6 mt-6">
+            <dl className="space-y-4">
+              <div>
+                <dt className="text-white text-sm font-semibold">Native mobile + wearables</dt>
+                <dd className="text-ink-muted text-sm leading-relaxed ml-0">Apple Watch integration for passive data: HRV, sleep quality, skin temperature. The hypothesis is that wearable signals can surface patterns before a woman logs them.</dd>
+              </div>
+              <div>
+                <dt className="text-white text-sm font-semibold">Predictive analytics</dt>
+                <dd className="text-ink-muted text-sm leading-relaxed ml-0">Not &ldquo;here are your patterns&rdquo; but &ldquo;here&rsquo;s what&rsquo;s likely coming and when.&rdquo; Symptom forecasting with alerts that give a woman time to prepare rather than react.</dd>
+              </div>
+              <div>
+                <dt className="text-white text-sm font-semibold">Provider dashboard</dt>
+                <dd className="text-ink-muted text-sm leading-relaxed ml-0">Anonymized aggregate symptom patterns across a patient population. The kind of longitudinal data a menopause specialist currently has no systematic way to collect. That data doesn&rsquo;t exist anywhere else at scale.</dd>
+              </div>
+            </dl>
           </div>
 
         </div>
 
         {/* 8. Closing */}
-        <div className="pt-12 max-w-prose">
+        <div className="max-w-prose">
           <div className="text-lg text-white leading-relaxed space-y-4 text-pretty">
             <p>
               Menopause affects every woman who lives long enough. And yet for
@@ -414,7 +408,7 @@ export default function Meno() {
         </div>
 
         {/* 9. Footnotes */}
-        <div className="border-t border-border-subtle mt-16 pt-8 text-xs text-ink-muted">
+        <div className="border-t border-border-subtle pt-8 text-xs text-ink-muted" aria-label="Sources">
           <p className="mb-1">Sources</p>
           <p>
             1. Allen JT et al. Menopause. 2023;30(10):1002-1005.
