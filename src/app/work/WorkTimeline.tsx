@@ -1,5 +1,6 @@
 'use client';
 
+import type { CSSProperties } from 'react';
 import { useState } from 'react';
 import { Download, ChevronDown } from 'lucide-react';
 import { careerEvents } from '@/data/careerEvents';
@@ -22,11 +23,16 @@ export default function WorkTimeline() {
               const isExpanded = expandedJob === idx;
 
               return (
-                <div key={event.company} className="relative">
+                <div
+                  key={idx}
+                  className="relative animate-list-item"
+                  style={{ "--stagger": `${idx * 60}ms` } as CSSProperties}
+                >
                   <div
-                    className={`absolute -left-10 top-[0.375rem] w-2 h-2 rounded-full -translate-x-1/2 ${
+                    className={`absolute -left-10 top-[0.375rem] w-2 h-2 rounded-full ${
                       isBreak ? 'bg-border-subtle' : 'bg-accent'
                     }`}
+                    style={{ transform: 'translateX(-50%)' }}
                   />
 
                   <p className="text-ink-muted text-xs mb-2">{event.year}</p>
@@ -44,9 +50,9 @@ export default function WorkTimeline() {
                     >
                       <div className="flex justify-between items-start gap-4">
                         <div>
-                          <h3 className="text-lg font-bold text-white text-balance">
+                          <h2 className="text-lg font-bold text-white text-balance">
                             {event.company}
-                          </h3>
+                          </h2>
                           <p
                             className={`text-sm mt-0.5 ${
                               isBreak
@@ -68,16 +74,21 @@ export default function WorkTimeline() {
                         {event.highlight}
                       </p>
 
-                      {isExpanded && (
-                        <div
-                          id={`job-detail-${idx}`}
-                          className="mt-4 pt-4 border-t border-border-subtle animate-fade-in"
-                        >
-                          <p className="text-ink-muted text-sm leading-relaxed text-pretty">
-                            {event.detail}
-                          </p>
+                      <div
+                        id={`job-detail-${idx}`}
+                        className={`grid motion-safe:transition-[grid-template-rows] motion-safe:duration-300 motion-safe:ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                          isExpanded ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                        }`}
+                        aria-hidden={!isExpanded}
+                      >
+                        <div className="overflow-hidden min-h-0">
+                          <div className="mt-4 pt-4 border-t border-border-subtle">
+                            <p className="text-ink-muted text-sm leading-relaxed text-pretty">
+                              {event.detail}
+                            </p>
+                          </div>
                         </div>
-                      )}
+                      </div>
                     </div>
                   </button>
                 </div>

@@ -11,48 +11,40 @@ export const careerEvents: CareerEvent[] = [
     year: "2012–2016",
     company: "Intel",
     role: "Software Engineer",
-    highlight: "Started as intern, worked across data infrastructure",
+    highlight: "Graph infrastructure and ecosystem mapping with Neo4J and Elasticsearch",
     detail:
-      "Started as intern, worked across data infrastructure and ecosystem mapping with Neo4J and Elasticsearch.",
+      "Joined as an intern and grew into a full-time engineer over four years. Built data pipelines and graph-based ecosystem maps across the division.",
   },
   {
     year: "2016–2017",
     company: "Cylance",
     role: "Software Engineer",
-    highlight: "Built security systems & forensics analytics",
+    highlight: "Endpoint security forensics and high-availability async API",
     detail:
-      "Worked on highly-available async API and built security forensics analytics tools protecting enterprise endpoints.",
+      "Built a production-grade async API and forensics analytics tools for enterprise endpoint investigation. Intensive exposure to security engineering at scale.",
   },
   {
     year: "2017–2019",
     company: "Cox Automotive",
     role: "Senior Engineer – Data Solutions",
-    highlight: "Maryland MVA safety recalls, vehicle valuations AI",
+    highlight: "Maryland MVA safety recalls (20+ APIs) · vehicle valuations AI · 6 subsidiaries",
     detail:
-      "Led Maryland MVA vehicle recall integration (20+ APIs), designed neural networks for vehicle valuations, served 6+ subsidiaries.",
+      "Led the Maryland MVA vehicle recall integration (20+ APIs) and separately designed neural networks for vehicle valuations deployed across 6+ subsidiaries. Safety-critical systems serving Cox's full brand portfolio.",
   },
   {
     year: "2019–2021",
     company: "Flashpoint",
     role: "Senior Engineer / Tech Lead",
-    highlight: "Compromised credentials monitoring at scale",
+    highlight: "Compromised credentials monitoring at scale · 35B+ records, 40TB warehouse",
     detail:
       "Owned Compromised Credentials Monitoring (35B+ records), led data warehouse cleansing (40TB). Built real-time breach detection pipelines and internal tools, mentored engineers, and contributed to security research.",
   },
   {
     year: "2021–2025",
     company: "Learning & Growth",
-    role: "Sabbatical",
-    highlight: "3 Coursera specializations, built Meno, 18 courses",
+    role: "Independent Study & Build",
+    highlight: "Built Meno (Claude API + RAG) · 2 Coursera specializations · 18 courses",
     detail:
-      "Traveled to Spain. Completed 3 Coursera specializations and 18 courses across Anthropic and Coursera. Built Meno, a full-stack healthcare application with Claude API integration and RAG pipelines.",
-  },
-  {
-    year: "2025+",
-    company: "Return to Tech",
-    role: "Senior Engineer with LLM Expertise",
-    highlight: "Ready to build AI solutions",
-    detail:
-      "Ready to contribute AI solutions, mentor engineers, and build sustainable technical cultures in organizations that value responsible technology.",
+      "Built Meno, a full-stack healthcare application with Claude API integration and RAG pipelines. Completed 2 Coursera specializations and 18 courses across Anthropic and Coursera.",
   },
 ];
