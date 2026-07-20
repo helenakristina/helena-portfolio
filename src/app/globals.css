@@ -25,6 +25,11 @@ body {
   color: var(--ink);
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -45,5 +50,34 @@ body {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+/* --- Coursework stagger reveal (scroll-driven) --- */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .animate-list-item {
+    opacity: 0;
+    animation: reveal-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+    animation-delay: var(--stagger, 0ms);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-list-item {
+      opacity: 1;
+      animation: none;
+    }
   }
 }
