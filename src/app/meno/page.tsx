@@ -114,7 +114,7 @@ export default function Meno() {
             </figcaption>
           </figure>
 
-          <h3 className="text-base font-semibold text-white mb-2 text-balance">Calling script</h3>
+          <h3 className="text-lg font-semibold text-white mb-2 text-balance">Calling script</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             When you&rsquo;re ready to call, Meno generates a script
             personalized to that provider and your insurance: the
@@ -137,7 +137,7 @@ export default function Meno() {
             </figcaption>
           </figure>
 
-          <h3 className="text-base font-semibold text-white mb-2 text-balance">Appointment prep</h3>
+          <h3 className="text-lg font-semibold text-white mb-2 text-balance">Appointment prep</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             Once you have an appointment, the preparation starts. Meno asks a
             few questions: new provider or established relationship, what
@@ -164,7 +164,7 @@ export default function Meno() {
             </figcaption>
           </figure>
 
-          <h3 className="text-base font-semibold text-white mb-2 text-balance">Practice scenarios</h3>
+          <h3 className="text-lg font-semibold text-white mb-2 text-balance">Practice scenarios</h3>
           <p className="text-ink-muted leading-relaxed text-pretty">
             The rest of the appointment prep builds from there. You prioritize
             your concerns in the order you want to raise them. You answer two
@@ -350,9 +350,6 @@ export default function Meno() {
           <h2 className="text-2xl font-bold text-white mb-6 text-balance">
             Where It&rsquo;s Going
           </h2>
-          <div className="text-ink-muted leading-relaxed space-y-4">
-            <p>None of this is built yet. Here is where Meno goes next.</p>
-          </div>
           <div className="border border-border-subtle p-6 mt-6">
             <dl className="space-y-4">
               <div>
@@ -369,7 +366,7 @@ export default function Meno() {
               </div>
             </dl>
           </div>
-
+          <p className="mt-6 text-sm text-ink-muted">None of this is in development yet.</p>
         </div>
 
         {/* 8. Closing */}
@@ -409,7 +406,7 @@ export default function Meno() {
 
         {/* 9. Footnotes */}
         <div className="border-t border-border-subtle pt-8 text-xs text-ink-muted" aria-label="Sources">
-          <p className="mb-1">Sources</p>
+          <p className="mb-2 font-semibold text-white">Sources</p>
           <p>
             1. Allen JT et al. Menopause. 2023;30(10):1002-1005.
             doi:10.1097/GME.0000000000002234

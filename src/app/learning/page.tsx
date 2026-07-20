@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Helena Lucia – Learning",
@@ -7,11 +8,67 @@ export const metadata: Metadata = {
     "AI and LLM specializations, certifications, and coursework. Claude Certified Architect. Three Coursera specializations across Anthropic and Vanderbilt University.",
 };
 
+const specializations = [
+  {
+    name: "Generative AI Software Engineering",
+    org: "Vanderbilt University",
+    url: "https://www.coursera.org/account/accomplishments/specialization/OHV0WS3FIL7N",
+  },
+  {
+    name: "AI Agent Developer",
+    org: "Vanderbilt University",
+    url: "https://www.coursera.org/account/accomplishments/specialization/COE1GB5Y33DD",
+  },
+];
+
+const coursework = [
+  {
+    name: "Building with the Claude API",
+    org: "Anthropic",
+    url: "https://verify.skilljar.com/c/egoztfya8gqu",
+  },
+  {
+    name: "AI Agents & Agentic AI Architecture in Python",
+    org: "Vanderbilt University",
+    url: "https://www.coursera.org/account/accomplishments/verify/1IAMZWQ6UWVO",
+  },
+  {
+    name: "Introduction to Agent Skills",
+    org: "Anthropic",
+    url: "https://verify.skilljar.com/c/b5tjfstt3rvt",
+  },
+  {
+    name: "Claude Code in Action",
+    org: "Anthropic",
+    url: "https://verify.skilljar.com/c/63bjd6obgs5h",
+  },
+  {
+    name: "Introduction to Model Context Protocol",
+    org: "Anthropic",
+    url: "https://verify.skilljar.com/c/zvx4yokj755g",
+  },
+  {
+    name: "Claude Code: Software Engineering with Generative AI Agents",
+    org: "Anthropic",
+    url: "https://www.coursera.org/account/accomplishments/verify/QF2F4LSCHNMH",
+  },
+  {
+    name: "Trustworthy Generative AI",
+    org: "Vanderbilt University",
+    url: "https://www.coursera.org/account/accomplishments/verify/AQCTF39SYJ0D",
+  },
+];
+
 export default function Learning() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
+    <section aria-labelledby="learning-title" className="py-24 px-4 sm:px-6 lg:px-8 animate-fade-in">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-16 text-balance">Learning</h1>
+        <h1 id="learning-title" className="text-4xl font-bold text-white mb-6 text-balance">Learning</h1>
+
+        <div className="text-ink-muted leading-relaxed space-y-4 mb-16 max-w-prose">
+          <p>I didn&rsquo;t want to use AI as a black box. Building Meno meant making real decisions about LLM architecture, RAG pipelines, and agentic systems. I needed to understand how they actually work.</p>
+          <p className="text-white">Everything here is pointed at that question.</p>
+        </div>
 
         <div className="space-y-16">
           {/* Credentials */}
@@ -37,7 +94,7 @@ export default function Learning() {
                 </p>
                 <p className="text-ink-muted text-sm mt-1">Anthropic · 2025</p>
                 <p className="text-accent text-xs mt-2 tracking-wide">
-                  Verify on Credly →
+                  Verify on Credly<span aria-hidden="true"> →</span>
                 </p>
               </div>
             </a>
@@ -49,34 +106,27 @@ export default function Learning() {
               Coursera Specializations
             </h2>
             <p className="text-ink-muted text-sm mb-8">2025–2026</p>
-            <ul className="space-y-4">
-              <li className="flex gap-3">
-                <span className="text-accent shrink-0 mt-px">•</span>
-                <span className="text-white">
-                  <strong>Real-World AI for Everyone</strong>
-                  <span className="text-ink-muted"> · Anthropic</span>
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-accent shrink-0 mt-px">•</span>
-                <span className="text-white">
-                  <strong>Generative AI Software Engineering</strong>
-                  <span className="text-ink-muted">
-                    {" "}
-                    · Vanderbilt University
-                  </span>
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-accent shrink-0 mt-px">•</span>
-                <span className="text-white">
-                  <strong>AI Agent Developer</strong>
-                  <span className="text-ink-muted">
-                    {" "}
-                    · Vanderbilt University
-                  </span>
-                </span>
-              </li>
+            <ul className="space-y-6">
+              {specializations.map(({ name, org, url }) => (
+                <li key={name} className="flex gap-3">
+                  <span className="text-accent shrink-0 mt-1">•</span>
+                  <div>
+                    <p className="text-white">
+                      <strong>{name}</strong>
+                      <span className="text-ink-muted"> · {org}</span>
+                    </p>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Verify ${name} certificate (opens in new tab)`}
+                      className="text-accent text-xs tracking-wide hover:text-white transition-colors duration-200"
+                    >
+                      Verify<span aria-hidden="true"> →</span>
+                    </a>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -84,58 +134,43 @@ export default function Learning() {
           <div className="border-t border-border-subtle pt-12">
             <h2 className="text-lg font-bold text-white mb-2 text-balance">Coursework</h2>
             <p className="text-ink-muted text-sm mb-8">
-              18 courses – Coursera and Anthropic
+              Selected courses &middot; Coursera and Anthropic, 2025&ndash;2026
             </p>
-            <ul className="space-y-4">
-              {[
-                { name: "Building with the Claude API", org: "Anthropic" },
-                {
-                  name: "AI Agents & Agentic AI Architecture",
-                  org: "Vanderbilt University",
-                },
-                { name: "Introduction to Agent Skills", org: "Anthropic" },
-                { name: "Claude Code in Action", org: "Anthropic" },
-                {
-                  name: "Introduction to Model Context Protocol",
-                  org: "Anthropic",
-                },
-                { name: "AI Fundamentals with Claude", org: "Anthropic" },
-                {
-                  name: "Trustworthy Generative AI",
-                  org: "Vanderbilt University",
-                },
-              ].map(({ name, org }) => (
+            <ul className="space-y-6">
+              {coursework.map(({ name, org, url }) => (
                 <li key={name} className="flex gap-3">
-                  <span className="text-accent shrink-0 mt-px">•</span>
-                  <span className="text-white">
-                    <strong>{name}</strong>
-                    <span className="text-ink-muted"> · {org}</span>
-                  </span>
+                  <span className="text-accent shrink-0 mt-1">•</span>
+                  <div>
+                    <p className="text-white">
+                      <strong>{name}</strong>
+                      <span className="text-ink-muted"> · {org}</span>
+                    </p>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Verify ${name} certificate (opens in new tab)`}
+                      className="text-accent text-xs tracking-wide hover:text-white transition-colors duration-200"
+                    >
+                      Verify<span aria-hidden="true"> →</span>
+                    </a>
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Focus Areas */}
-          <div className="border-t border-border-subtle pt-12">
-            <h2 className="text-lg font-bold text-white mb-8 text-balance">Focus Areas</h2>
-            <div className="flex flex-wrap gap-3">
-              {[
-                "LLM architectures",
-                "Agentic AI",
-                "Prompt engineering",
-                "Claude API integration",
-                "Responsible AI",
-                "Model Context Protocol",
-              ].map((area) => (
-                <span
-                  key={area}
-                  className="text-sm text-white border border-border-subtle px-4 py-2"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
+          {/* Closing */}
+          <div className="border-t border-border-subtle pt-8">
+            <p className="text-sm text-ink-muted">
+              These credentials inform how I build.{" "}
+              <Link
+                href="/process"
+                className="text-accent hover:text-white font-semibold transition-colors duration-200"
+              >
+                See how I work<span aria-hidden="true"> →</span>
+              </Link>
+            </p>
           </div>
         </div>
       </div>
