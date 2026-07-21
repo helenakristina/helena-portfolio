@@ -40,11 +40,11 @@ export const careerEvents: CareerEvent[] = [
       "Owned Compromised Credentials Monitoring (35B+ records), led data warehouse cleansing (40TB). Built real-time breach detection pipelines and internal tools, mentored engineers, and contributed to security research.",
   },
   {
-    year: "2021–2025",
-    company: "Learning & Growth",
-    role: "Independent Study & Build",
-    highlight: "Built Meno (Claude API + RAG) · 2 Coursera specializations · 18 courses",
+    year: "2021–Present",
+    company: "Meno",
+    role: "Founder & Lead Engineer (Independent, self-funded)",
+    highlight: "Full-stack healthcare app · RAG pipeline · Claude API architecture",
     detail:
-      "Built Meno, a full-stack healthcare application with Claude API integration and RAG pipelines. Completed 2 Coursera specializations and 18 courses across Anthropic and Coursera.",
+      "Built Meno end to end: a NAMS-provider directory, RAG-powered clinical Q&A across 10,000+ curated research documents, and a six-call appointment-prep pipeline with Pydantic-validated structured outputs. Built on the OpenAI API with dependency injection throughout, designed for a one-file swap to Claude API in production. Also completed two Coursera specializations and 18 courses in generative AI and agentic engineering.",
   },
 ];

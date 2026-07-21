@@ -53,6 +53,50 @@ body {
   }
 }
 
+/* --- Timeline line draw (scroll-driven) --- */
+@keyframes draw-line {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@supports (animation-timeline: view()) {
+  .timeline-line-draw {
+    transform-origin: top;
+    animation: draw-line linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 50%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .timeline-line-draw {
+      animation: none;
+      transform: scaleY(1);
+    }
+  }
+}
+
+/* --- Timeline dot scale-in (scroll-driven) --- */
+@keyframes scale-in {
+  from { scale: 0; }
+  to { scale: 1; }
+}
+
+@supports (animation-timeline: view()) {
+  .timeline-dot {
+    animation: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+    animation-delay: var(--stagger, 0ms);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .timeline-dot {
+      animation: none;
+      scale: 1;
+    }
+  }
+}
+
 /* --- Coursework stagger reveal (scroll-driven) --- */
 @keyframes reveal-up {
   from {
@@ -79,5 +123,18 @@ body {
       opacity: 1;
       animation: none;
     }
+  }
+}
+
+@media print {
+  .animate-list-item,
+  .timeline-line-draw {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  .timeline-dot {
+    animation: none !important;
+    scale: 1 !important;
   }
 }
