@@ -79,8 +79,8 @@ export default function Process() {
               >
                 <div
                   aria-hidden="true"
-                  className="absolute -left-10 top-[0.375rem] w-2 h-2 rounded-full bg-accent"
-                  style={{ transform: "translateX(-50%)" }}
+                  className="absolute -left-10 top-[0.375rem] w-2 h-2 rounded-full bg-accent timeline-dot"
+                  style={{ transform: "translateX(-50%)", "--stagger": `${index * 80}ms` } as CSSProperties}
                 />
                 <div className="border border-border-subtle p-5 hover:border-white/40 transition-colors duration-200">
                   <h2 className="text-lg font-bold text-white text-balance">{stage.title}</h2>
