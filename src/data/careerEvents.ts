@@ -11,9 +11,9 @@ export const careerEvents: CareerEvent[] = [
     year: "2012–2016",
     company: "Intel",
     role: "Software Engineer",
-    highlight: "Graph infrastructure and ecosystem mapping with Neo4J and Elasticsearch",
+    highlight: "Dependency mapping for Business Continuity/Disaster Recovery (BCDR)",
     detail:
-      "Joined as an intern and grew into a full-time engineer over four years. Built data pipelines and graph-based ecosystem maps across the division.",
+      "Joined as an intern and grew into a full-time engineer over four years. Mapped Intel's systems and infrastructure dependencies as a graph (Neo4J, Elasticsearch), primarily serving the BCDR team's continuity and recovery planning across the division. Broad exposure to large-scale data infrastructure: Hadoop, Hive, Cassandra.",
   },
   {
     year: "2016–2017",
