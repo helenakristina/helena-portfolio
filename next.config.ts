@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
               "font-src 'self' fonts.gstatic.com",
               "img-src 'self' data:",
-              `connect-src 'self'${__impeccableLiveDev}`,
+              `connect-src 'self' https://formspree.io${__impeccableLiveDev}`,
               "object-src 'none'",
               "frame-ancestors 'none'",
             ].join('; '),

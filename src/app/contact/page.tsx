@@ -1,57 +1,55 @@
 import type { Metadata } from "next";
-import { Mail, Linkedin } from "lucide-react";
+
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Helena Lucia – Contact",
   description:
-    "Helena Lucia is a senior engineer in healthcare AI and agentic systems, open to the right full-time role.",
+    "Helena Lucia is a senior engineer building AI-powered products, with deep interest in healthcare. Selective about what she builds and who she builds it with.",
 };
 
 export default function Contact() {
   return (
     <section
       aria-labelledby="contact-title"
-      className="py-20 px-4 sm:px-6 lg:px-8 animate-fade-in"
+      className="py-20 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-2xl mx-auto text-center">
-        <h1
-          id="contact-title"
-          className="text-4xl font-bold text-white mb-6 text-balance"
+      <div className="max-w-2xl mx-auto">
+        <div className="text-center">
+          <h1
+            id="contact-title"
+            className="text-4xl font-bold text-foreground mb-6 text-balance animate-fade-in"
+          >
+            Let&apos;s see if this is a fit.
+          </h1>
+
+          <p
+            className="text-ink-muted text-lg text-pretty max-w-prose mx-auto animate-fade-in"
+            style={{ animationDelay: "120ms" }}
+          >
+            I&apos;m looking for a full-time engineering role building AI-powered
+            products. Healthcare is where I have the deepest interest, but any
+            team doing serious, deliberate engineering has my attention. If you
+            need someone who can ship and explain the work, reach out.
+          </p>
+        </div>
+
+        <div
+          className="mt-8 animate-fade-in"
+          style={{ animationDelay: "180ms" }}
         >
-          Get In Touch
-        </h1>
-
-        <p className="text-ink-muted text-lg mb-12 text-pretty max-w-prose mx-auto">
-          I&apos;m looking for a full-time engineering role in healthcare AI or
-          agentic systems. If you&apos;re building something serious in that
-          space and need an engineer who can ship and explain the work, reach
-          out.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-3">
+          <p className="text-xs text-ink-muted mb-1.5">Or email me:</p>
           <a
             href="mailto:helenalucia@fastmail.com"
-            aria-label="Email Helena Lucia"
-            className="px-8 py-3 bg-accent text-[var(--bg)] font-semibold hover:bg-accent-deep transition-colors duration-200 flex items-center justify-center gap-2"
+            className="min-h-[44px] inline-flex items-center text-ink-muted text-sm underline decoration-ink-muted/40 underline-offset-4 hover:text-foreground hover:decoration-foreground/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 rounded-sm"
           >
-            <Mail size={20} aria-hidden="true" />
-            Email Me
-          </a>
-          <a
-            href="https://linkedin.com/in/helena-lucia"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn (opens in new tab)"
-            className="px-8 py-3 border border-white/25 text-white font-semibold hover:border-white transition-colors duration-200 flex items-center justify-center gap-2"
-          >
-            <Linkedin size={20} aria-hidden="true" />
-            LinkedIn
+            helenalucia@fastmail.com
           </a>
         </div>
 
-        <p className="text-ink-muted text-sm select-all">
-          helenalucia@fastmail.com
-        </p>
+        <div className="animate-fade-in-place" style={{ animationDelay: "240ms" }}>
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

@@ -103,7 +103,7 @@ export default function WorkTimeline() {
           <a
             href="/helena-lucia-resume.pdf"
             download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-[var(--bg)] font-semibold text-sm hover:bg-accent-deep transition-colors duration-200"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background font-semibold text-sm hover:bg-accent-deep transition-colors duration-200"
           >
             <Download size={16} />
             Download resume
