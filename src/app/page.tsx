@@ -14,8 +14,8 @@ export default function Home() {
       <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-28 animate-fade-in">
         <div className="max-w-4xl mx-auto w-full">
           <h1 className="text-[clamp(2.25rem,5.5vw,5rem)] font-extrabold leading-[1.05] tracking-tight text-accent text-balance mb-8">
-            &ldquo;For the billion women whose doctors don&apos;t understand
-            menopause.&rdquo;
+            For the billion women whose doctors don&apos;t understand
+            menopause.
           </h1>
 
           <p className="text-[clamp(1.125rem,2vw,1.75rem)] font-semibold text-white leading-snug mb-8">
